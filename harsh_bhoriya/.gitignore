@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.vscode/
+.ipynb_checkpoints/
+models/
+runs/
+data/raw/
+data/labellerr_export/
+*.log
+.DS_Store
