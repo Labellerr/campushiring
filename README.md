@@ -1,2 +1,2 @@
-# campushiring
-This repository is part of the hiring process at Labellerr AI where students complete the assignment and raise a PR. Only the assignments which follow the guidelines will be accepted
+# Labeller_Assignment
+Vehicles and Pedestrians segmentation website via training custom dataset on yolov8n-seg model
