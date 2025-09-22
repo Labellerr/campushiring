@@ -1,5 +1,30 @@
-streamlit>=1.25.0
-opencv-python-headless>=4.5.5.64
-numpy>=1.21.0
+# Core dependencies
+streamlit>=1.28.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Video processing
+opencv-contrib-python>=4.8.0  # Includes all OpenCV modules (no need for opencv-python separately)
+
+# YOLO and computer vision
 ultralytics>=8.0.0
-torch>=1.12.0
+torch>=2.0.0
+torchvision>=0.15.0
+Pillow>=9.5.0
+
+# Visualization and utilities
+tqdm>=4.65.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Better video format support
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+
+# Optional: GPU acceleration (for CUDA)
+# torch>=2.0.0+cu118
+# torchvision>=0.15.0+cu118
+# torchaudio>=2.0.0+cu118
+
+# Optional: System utilities
+psutil>=5.9.0

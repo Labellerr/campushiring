@@ -24,6 +24,40 @@ def load_model(model_path):
         st.error(f"❌ Error loading model: {str(e)}")
         return None
 
+def convert_video_format(input_path, output_path):
+    """Convert video to web-compatible format"""
+    try:
+        cap = cv2.VideoCapture(input_path)
+        if not cap.isOpened():
+            raise Exception("Could not open input video")
+        
+        # Get video properties
+        fps = int(cap.get(cv2.CAP_PROP_FPS))
+        width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        
+        # Use H264 codec for better web compatibility
+        fourcc = cv2.VideoWriter_fourcc(*'H264')
+        out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+        
+        if not out.isOpened():
+            # Fallback to mp4v if H264 not available
+            fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+            out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+        
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
+            out.write(frame)
+        
+        cap.release()
+        out.release()
+        return True
+    except Exception as e:
+        st.error(f"Error converting video: {str(e)}")
+        return False
+
 def process_video_frame_by_frame(model, input_path, output_path, confidence_threshold, progress_bar):
     """Process video frame by frame with tracking"""
     
@@ -38,9 +72,20 @@ def process_video_frame_by_frame(model, input_path, output_path, confidence_thre
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     
-    # Setup video writer
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    st.info(f"📊 Video info: {width}x{height}, {fps} FPS, {total_frames} frames")
+    
+    # Setup video writer with web-compatible codec
+    fourcc = cv2.VideoWriter_fourcc(*'H264')
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+    
+    if not out.isOpened():
+        # Fallback to mp4v
+        st.warning("H264 codec not available, using mp4v...")
+        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+        out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+        
+        if not out.isOpened():
+            raise Exception("Could not initialize video writer")
     
     tracks = []
     frame_count = 0
@@ -131,14 +176,36 @@ def main():
         
         # Create temporary directory for processing
         with tempfile.TemporaryDirectory() as temp_dir:
-            # Save uploaded video
-            input_video_path = os.path.join(temp_dir, uploaded_file.name)
-            with open(input_video_path, "wb") as f:
-                f.write(uploaded_file.read())
+            # Save uploaded video to temp directory
+            input_video_path = os.path.join(temp_dir, "input_video.mp4")
             
-            # Display original video
-            st.subheader("📹 Original Video")
-            st.video(input_video_path)
+            try:
+                # Write uploaded file to disk
+                with open(input_video_path, "wb") as f:
+                    f.write(uploaded_file.getvalue())
+                
+                st.success(f"✅ Video saved successfully ({os.path.getsize(input_video_path)} bytes)")
+                
+                # Convert to web-compatible format if needed
+                web_compatible_input = os.path.join(temp_dir, "web_input.mp4")
+                if convert_video_format(input_video_path, web_compatible_input):
+                    input_video_path = web_compatible_input
+                    st.success("✅ Video converted to web-compatible format")
+                
+                # Display original video
+                st.subheader("📹 Original Video")
+                try:
+                    # Try to display the video
+                    with open(input_video_path, "rb") as video_file:
+                        video_bytes = video_file.read()
+                        st.video(video_bytes)
+                except Exception as e:
+                    st.error(f"❌ Could not display original video: {str(e)}")
+                    st.info("Video file exists but may not be in a web-compatible format")
+                
+            except Exception as e:
+                st.error(f"❌ Error saving uploaded video: {str(e)}")
+                st.stop()
             
             # Tracking options
             st.subheader("⚙️ Tracking Options")
@@ -162,8 +229,8 @@ def main():
             
             if st.button("🚀 Run Tracking", type="primary"):
                 try:
-                    # Create output paths
-                    output_video_path = os.path.join(temp_dir, f"tracked_{uploaded_file.name}")
+                    # Create output path with .mp4 extension
+                    output_video_path = os.path.join(temp_dir, "tracked_output.mp4")
                     
                     if processing_method == "Frame by Frame (Recommended)":
                         st.info("🎬 Processing video frame by frame...")
@@ -193,25 +260,39 @@ def main():
                             )
                             
                             # Find the output video
+                            output_found = False
                             for root, dirs, files in os.walk(temp_dir):
                                 for file in files:
                                     if file.endswith(('.mp4', '.avi', '.mov')) and 'tracking_output' in root:
                                         output_video_path = os.path.join(root, file)
+                                        output_found = True
                                         break
+                                if output_found:
+                                    break
                             
                             tracks = []
-                            for frame_id, r in enumerate(results):
-                                if r.boxes is not None and hasattr(r.boxes, 'id') and r.boxes.id is not None:
-                                    # Process tracking results...
-                                    pass  # Add your existing processing logic here
+                            # Process results for batch method...
                     
-                    # Check if output video exists
-                    if os.path.exists(output_video_path):
-                        st.success(f"✅ Tracking complete! Found {len(set(track['id'] for track in tracks)) if tracks else 0} unique objects.")
+                    # Check if output video exists and display it
+                    if os.path.exists(output_video_path) and os.path.getsize(output_video_path) > 0:
+                        st.success(f"✅ Tracking complete! Output video size: {os.path.getsize(output_video_path)} bytes")
+                        st.success(f"Found {len(set(track['id'] for track in tracks)) if tracks else 0} unique objects.")
                         
                         # Display results
                         st.subheader("🎯 Tracked Video")
-                        st.video(output_video_path)
+                        try:
+                            # Read video as bytes for better compatibility
+                            with open(output_video_path, "rb") as video_file:
+                                video_bytes = video_file.read()
+                                st.video(video_bytes)
+                        except Exception as e:
+                            st.error(f"❌ Could not display tracked video: {str(e)}")
+                            
+                            # Try alternative display method
+                            try:
+                                st.video(output_video_path)
+                            except Exception as e2:
+                                st.error(f"❌ Alternative display method also failed: {str(e2)}")
                         
                         # Save and display statistics
                         if tracks:
@@ -254,25 +335,31 @@ def main():
                             )
                             
                             # Download video
-                            with open(output_video_path, "rb") as f:
-                                st.download_button(
-                                    label="📥 Download Tracked Video",
-                                    data=f,
-                                    file_name=f"tracked_{uploaded_file.name}",
-                                    mime="video/mp4"
-                                )
+                            try:
+                                with open(output_video_path, "rb") as f:
+                                    video_data = f.read()
+                                    st.download_button(
+                                        label="📥 Download Tracked Video",
+                                        data=video_data,
+                                        file_name=f"tracked_{uploaded_file.name}",
+                                        mime="video/mp4"
+                                    )
+                            except Exception as e:
+                                st.error(f"❌ Could not prepare video download: {str(e)}")
                         else:
                             st.warning("⚠️ No objects were tracked. Try lowering the confidence threshold.")
                     
                     else:
-                        st.error("❌ Could not create output video. Please check your model and input video.")
+                        st.error("❌ Could not create output video or output video is empty.")
                         
                         # Debug information
                         st.subheader("🔍 Debug Information")
                         st.write("Files in temp directory:")
                         for root, dirs, files in os.walk(temp_dir):
                             for file in files:
-                                st.code(f"📁 {os.path.relpath(os.path.join(root, file), temp_dir)}")
+                                file_path = os.path.join(root, file)
+                                file_size = os.path.getsize(file_path)
+                                st.code(f"📁 {os.path.relpath(file_path, temp_dir)} ({file_size} bytes)")
                 
                 except Exception as e:
                     st.error(f"❌ Error during tracking: {str(e)}")
