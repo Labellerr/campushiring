@@ -13,7 +13,6 @@ You can access and interact with the live application here:
 **[https://labellerr-project.streamlit.app](https://labellerr-project.streamlit.app)**
 
 ![App Screenshot](screenshot.png)
-*(To add a screenshot: take a picture of your running app, name the file `screenshot.png`, and upload it to your GitHub repository.)*
 
 ---
 
