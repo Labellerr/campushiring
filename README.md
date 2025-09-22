@@ -37,13 +37,3 @@ You can access and interact with the live application here:
 - **Data Annotation:** Labellerr Platform
 - **Core Libraries:** PyTorch, OpenCV, Pandas
 
----
-
-## ⚙️ Local Setup and Usage
-
-To run this project on your local machine, follow these steps:
-
-**1. Clone the Repository**
-```bash
-git clone <your-repository-url>
-cd <repository-folder>
