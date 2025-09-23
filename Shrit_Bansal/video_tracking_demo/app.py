@@ -32,15 +32,14 @@ def show_analytics():
         if not all_objects:
             st.info("No objects were detected in this video.")
             return
-
         unique_objects = len({obj.get("id") for obj in all_objects})
         frames_processed = len(results_data)
-
         c1, c2 = st.columns(2)
-        c1.metric("Unique Objects", unique_objects)
-        c2.metric("Frames", frames_processed)
+        c1.metric("Unique Objects", unique_objects)   # KPI widget [docs]
+        c2.metric("Frames", frames_processed)         # KPI widget [docs]
     else:
         st.info("Run tracking to see analytics.")
+
 
 def show_downloads():
     st.subheader("Download Results")
