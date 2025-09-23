@@ -1,0 +1,5 @@
+streamlit
+ultralytics
+supervision
+opencv-python
+numpy

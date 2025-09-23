@@ -1,0 +1,17 @@
+Ignore Python virtual environments
+venv/
+*.venv/
+env/
+
+Ignore Python cache files
+pycache/
+*.py[cod]
+*$py.class
+
+Ignore large model files
+IMPORTANT: Do not upload your large .pt file to GitHub
+weights/best.pt
+
+Ignore OS-specific files
+.DS_Store
+Thumbs.db
