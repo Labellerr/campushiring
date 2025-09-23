@@ -2,7 +2,7 @@
 
 A specialized computer vision application for **vehicle and pedestrian detection and tracking** using YOLOv8 segmentation models and ByteTrack algorithm. Built with Streamlit for easy deployment and real-time analysis.
 
-![Segmentation Demo](myimages/img37.jpg) ![Streamlit Input](myimages/inputer.png) ![Streamlit Output](myimages/streamer.png) ![ByteTrack](myimages/myvideo.mp4)
+![Segmentation Demo](myimages/img37.jpg) ![Streamlit Input](myimages/inputer.png) ![Streamlit Output](myimages/streamer.png) ![ByteTrack](myvideo.mp4)
 
 ## 🎯 Project Overview
 
