@@ -1,6 +1,5 @@
 streamlit
 ultralytics>=8.0.0
 numpy
-torch
 pillow
 moviepy
