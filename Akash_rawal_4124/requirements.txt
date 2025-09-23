@@ -16,3 +16,8 @@ scipy
 tqdm
 pandas
 matplotlib
+
+
+# labellerr
+
+https://github.com/tensormatics/SDKPython/releases/download/prod/labellerr_sdk-1.0.0.tar.gz
