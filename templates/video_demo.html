@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOLO Model Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      body { background: #0b1526; color: #e6f0ff; }
+      .panel { background: rgba(20,30,50,0.6); border: 1px solid #2b3b5c; border-radius: 12px; padding: 16px; }
+      .btn-primary { background: #3aa0ff; border-color: #3aa0ff; }
+      .neon { box-shadow: 0 0 12px rgba(58,160,255,0.6); }
+      code { color: #a0e3a0; }
+      .hero { margin-top: 24px; }
+    </style>
+  </head>
+  <body class="container py-4">
+    <div class="hero panel mb-4">
+      <h3 class="mb-2">YOLO Model Demo</h3>
+      <p class="mb-0">Upload a video to run YOLO-Seg + ByteTrack. Export a <code>results.json</code> with IDs, classes, boxes, and frames.</p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-5">
+        <div class="panel h-100">
+          <h5>Upload Video</h5>
+          <form id="trackForm" enctype="multipart/form-data">
+            <div class="mb-3">
+              <input class="form-control" type="file" name="file" accept="video/*" required />
+            </div>
+            <div class="row g-2">
+              <div class="col-4">
+                <label class="form-label">Detection sensitivity</label>
+                <select id="confPreset" class="form-select">
+                  <option value="low" selected>Low (conf 0.05)</option>
+                  <option value="medium">Medium (conf 0.25)</option>
+                  <option value="high">High (conf 0.50)</option>
+                </select>
+                <input type="hidden" name="conf" id="confValue" value="0.05" />
+              </div>
+              <div class="col-4">
+                <label class="form-label">NMS strictness</label>
+                <select id="iouPreset" class="form-select">
+                  <option value="low">Low (IoU 0.40)</option>
+                  <option value="medium" selected>Medium (IoU 0.50)</option>
+                  <option value="high">High (IoU 0.70)</option>
+                </select>
+                <input type="hidden" name="iou" id="iouValue" value="0.5" />
+              </div>
+              <div class="col-4">
+                <label class="form-label">Image size</label>
+                <select id="imgPreset" class="form-select">
+                  <option value="low">Low (320)</option>
+                  <option value="medium" selected>Medium (416)</option>
+                  <option value="high">High (640)</option>
+                </select>
+                <input type="hidden" name="imgsz" id="imgValue" value="416" />
+              </div>
+            </div>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="checkbox" id="persist" name="persist" checked>
+              <label class="form-check-label" for="persist">Persist track IDs</label>
+            </div>
+            <button class="btn btn-primary neon" type="submit">Run Analysis</button>
+          </form>
+          <div class="progress mt-3" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+            <div id="progressBar" class="progress-bar bg-info" style="width: 0%">0%</div>
+          </div>
+          <div class="mt-3" id="status">Idle</div>
+          <div class="mt-2">
+            <a id="jsonLink" class="btn btn-outline-light d-none" href="#" download>Download results.json</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="panel h-100">
+          <h5>Video Player</h5>
+          <div class="small text-secondary">Your uploaded video will appear here immediately for preview and analysis.</div>
+          <div class="mt-3" style="min-height: 400px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1); border-radius: 8px;">
+            <video id="videoPlayer" controls style="max-width: 100%; max-height: 400px; display: none;">
+              <source id="videoSource" src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div id="videoPlaceholder" style="color: #666; text-align: center;">
+              <i class="bi bi-film" style="font-size: 3rem; opacity: 0.5;"></i>
+              <p class="mt-2">Select a video file to preview it here</p>
+            </div>
+          </div>
+          <div class="mt-3" id="videoInfo" style="display: none;">
+            <small class="text-secondary">
+              Duration: <span id="videoDuration">00:00</span> |
+              Resolution: <span id="videoResolution">N/A</span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById('trackForm');
+      const statusEl = document.getElementById('status');
+      const jsonLink = document.getElementById('jsonLink');
+      const videoPlayer = document.getElementById('videoPlayer');
+      const videoSource = document.getElementById('videoSource');
+      const videoPlaceholder = document.getElementById('videoPlaceholder');
+      const videoInfo = document.getElementById('videoInfo');
+      const videoDuration = document.getElementById('videoDuration');
+      const videoResolution = document.getElementById('videoResolution');
+      const progressBar = document.getElementById('progressBar');
+      const confPreset = document.getElementById('confPreset');
+      const iouPreset = document.getElementById('iouPreset');
+      const imgPreset = document.getElementById('imgPreset');
+      const confValue = document.getElementById('confValue');
+      const iouValue = document.getElementById('iouValue');
+      const imgValue = document.getElementById('imgValue');
+
+      function mapPresets() {
+        const confMap = { low: 0.05, medium: 0.25, high: 0.5 };
+        const iouMap = { low: 0.4, medium: 0.5, high: 0.7 };
+        const imgMap = { low: 320, medium: 416, high: 640 };
+        confValue.value = confMap[confPreset.value];
+        iouValue.value = iouMap[iouPreset.value];
+        imgValue.value = imgMap[imgPreset.value];
+      }
+      confPreset.addEventListener('change', mapPresets);
+      iouPreset.addEventListener('change', mapPresets);
+      imgPreset.addEventListener('change', mapPresets);
+      mapPresets();
+
+      // Function to display video with metadata
+      function displayVideo(file) {
+        const url = URL.createObjectURL(file);
+        videoSource.src = url;
+        videoPlayer.load();
+
+        videoPlayer.style.display = 'block';
+        videoPlaceholder.style.display = 'none';
+
+        // Get video metadata
+        videoPlayer.onloadedmetadata = function() {
+          const duration = videoPlayer.duration;
+          const minutes = Math.floor(duration / 60);
+          const seconds = Math.floor(duration % 60);
+          videoDuration.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+          const width = videoPlayer.videoWidth;
+          const height = videoPlayer.videoHeight;
+          videoResolution.textContent = `${width}x${height}`;
+
+          videoInfo.style.display = 'block';
+        };
+      }
+
+      // Show video immediately when file is selected
+      const fileInput = form.querySelector('input[type="file"]');
+      fileInput.addEventListener('change', function(e) {
+        if (e.target.files.length > 0) {
+          displayVideo(e.target.files[0]);
+        }
+      });
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        statusEl.textContent = 'Uploading and processing...';
+        jsonLink.classList.add('d-none');
+        mapPresets();
+
+        // Show video if not already shown
+        if (fileInput.files.length > 0 && videoPlayer.style.display === 'none') {
+          displayVideo(fileInput.files[0]);
+        }
+
+        // Start indeterminate-like progress
+        let pct = 5;
+        progressBar.style.width = pct + '%';
+        progressBar.textContent = pct + '%';
+        const timer = setInterval(() => {
+          pct = Math.min(95, pct + 3);
+          progressBar.style.width = pct + '%';
+          progressBar.textContent = pct + '%';
+        }, 500);
+
+        const fd = new FormData(form);
+
+        try {
+          const resp = await fetch('/api/track_video', { method: 'POST', body: fd });
+          if (!resp.ok) {
+            throw new Error('Error running tracking');
+          }
+
+          const data = await resp.json();
+          statusEl.textContent = 'Done';
+          clearInterval(timer);
+          progressBar.style.width = '100%';
+          progressBar.textContent = '100%';
+
+          if (data.results_json) {
+            jsonLink.href = '/download?path=' + encodeURIComponent(data.results_json);
+            jsonLink.classList.remove('d-none');
+          }
+
+          // Show summary if available
+          if (data.summary) {
+            statusEl.textContent = 'Done - Check video player and download results below';
+          }
+
+        } catch (error) {
+          statusEl.textContent = 'Error: ' + error.message;
+          clearInterval(timer);
+          progressBar.style.width = '0%';
+          progressBar.textContent = '0%';
+        }
+      });
+    </script>
+  </body>
+  </html>
+
+

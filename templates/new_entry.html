@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-4">
+    <h2>✨ New Journal Entry</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="content" class="form-label">What did you learn today?</label>
+            <textarea class="form-control" id="content" name="content" rows="10" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="tags" class="form-label">Tags (comma separated)</label>
+            <input type="text" class="form-control" id="tags" name="tags" placeholder="python, flask, web">
+        </div>
+        <button type="submit" class="btn btn-primary">Save 💖</button>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

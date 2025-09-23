@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Welcome Header -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Welcome back, {{ user.username }}!</h1>
+        <a href="{{ url_for('new_entry') }}" class="d-none d-sm-inline-block btn btn-primary shadow-sm">
+            <i class="bi bi-plus-lg me-1"></i> New Entry
+        </a>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row">
+        <!-- Total Entries Card -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2 card-hover">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Entries</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ total_entries }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-journal-text fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Tags Card -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2 card-hover">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Tags</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ total_tags }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-tags fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Entries -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Recent Entries</h6>
+        </div>
+        <div class="card-body">
+            {% if entries %}
+                {% for entry in entries %}
+                <div class="entry-card mb-4 {% if not loop.last %}border-bottom pb-4{% endif %}">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="mb-0 text-gray-800">{{ entry.created_at.strftime('%B %d, %Y') }}</h5>
+                        <div class="d-flex gap-2">
+                            {% for tag in entry.tags %}
+                            <span class="badge bg-primary">{{ tag.name }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="entry-content">
+                        {{ entry.content | safe }}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="text-center py-4">
+                    <i class="bi bi-journal-plus display-4 text-gray-400"></i>
+                    <p class="mt-2 text-gray-600">No entries yet. Start your learning journey by creating your first entry!</p>
+                    <a href="{{ url_for('new_entry') }}" class="btn btn-primary mt-2">
+                        <i class="bi bi-plus-lg me-1"></i> Create First Entry
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
