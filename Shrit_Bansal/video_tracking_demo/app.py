@@ -61,9 +61,6 @@ def show_analytics():
             elif any(vc in cls_name for vc in vehicle_classes):
                 vehicle_count += 1
 
-        st.subheader("Object Distribution")
-        st.markdown(f"- 🟢 Pedestrians: **{pedestrian_count}** detections")
-        st.markdown(f"- 🔵 Vehicles: **{vehicle_count}** detections")
     else:
         st.info("Run tracking to see analytics.")
 
