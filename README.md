@@ -2,7 +2,7 @@
 
 A specialized computer vision application for **vehicle and pedestrian detection and tracking** using YOLOv8 segmentation models and ByteTrack algorithm. Built with Streamlit for easy deployment and real-time analysis.
 
-![Segmentation Demo](myimages/img37.jpg) ![Streamlit Input](myimages/inputer.png) ![Streamlit Output](myimages/streamer.png) ![ByteTrack](myimages/myvideo.mp4)
+![Segmentation Demo](myimages/img37.jpg) ![Streamlit Input](myimages/inputer.png) ![Streamlit Output](myimages/streamer.png) ![ByteTrack](myvideo.mp4)
 
 ## 🎯 Project Overview
 
@@ -255,64 +255,6 @@ torch.cuda.empty_cache()  # Clear GPU memory
 - **Data**: JSON tracking data, CSV analytics
 - **Images**: Segmentation masks, trajectory plots
 
-## 🚀 Deployment
-
-### Docker Setup
-```dockerfile
-FROM python:3.9-slim
-
-RUN apt-get update && apt-get install -y \
-    libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1
-
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY . .
-EXPOSE 8501
-
-CMD ["streamlit", "run", "app.py", "--server.address", "0.0.0.0"]
-```
-
-### Cloud Deployment
-- **Streamlit Cloud**: Direct GitHub integration
-- **Google Colab**: Jupyter notebook version
-- **AWS SageMaker**: Production deployment
-- **Azure Container Instances**: Scalable deployment
-
-## 🤝 Contributing
-
-### Areas for Improvement
-- [ ] Additional vehicle types (bicycles, scooters)
-- [ ] Pedestrian behavior analysis
-- [ ] Real-time webcam processing  
-- [ ] Custom model training pipeline
-- [ ] Multi-camera synchronization
-
-### Development Setup
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature/new-feature`
-3. Add tests for segmentation accuracy
-4. Submit pull request
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Ultralytics YOLOv8**: State-of-the-art segmentation models
-- **ByteTrack**: Robust multi-object tracking algorithm
-- **Streamlit**: Rapid web app development
-- **OpenCV**: Computer vision processing
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/vehicle-pedestrian-segmentation/issues)
-- **Model Questions**: Ultralytics documentation
-- **Tracking Issues**: ByteTrack repository
-
----
 
 **🎯 Built specifically for vehicle and pedestrian segmentation and tracking**
 
