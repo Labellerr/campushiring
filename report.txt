@@ -1,0 +1,4 @@
+Report Summary
+
+The submission contains the skeleton of a segmentation+tracking pipeline.
+Several functions and implementations are intentionally incorrect or missing.

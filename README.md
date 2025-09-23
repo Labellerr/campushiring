@@ -1,2 +1,8 @@
-# campushiring
-This repository is part of the hiring process at Labellerr AI where students complete the assignment and raise a PR. Only the assignments which follow the guidelines will be accepted
+# PEC Internship Assignment - Submission
+
+Files:
+- train_yoloseg.py
+- bytetrack_integration.py
+- app.py
+- report.txt
+- example_output.json
