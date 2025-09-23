@@ -1,3 +1,5 @@
+# Predictions + Split Dataset link
+   https://drive.google.com/drive/folders/1sH-vbJr1QPKdJErPo-r6FN0Y6GjXqbIN?usp=drive_link
 # 📝  Project Title: End-to-End Vehicle and Pedestrian Segmentation & Tracking
 # 🚀  Overview
 This project demonstrates an end-to-end computer vision pipeline for instance segmentation and multi-object tracking of vehicles and pedestrians. The system uses a fine-tuned YOLO-Seg model for accurate detection and integrates it with ByteTrack for robust object tracking in videos. The project covers the full machine learning lifecycle, from data curation and annotation on the Labellerr platform to model training and evaluation.
