@@ -1,5 +1,0 @@
-streamlit
-opencv-python
-ultralytics
-numpy
-torch
