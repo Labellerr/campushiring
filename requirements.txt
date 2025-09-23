@@ -1,26 +1,45 @@
-# Core
+# Core web framework
 streamlit>=1.28.0
+
+# Computer vision and AI
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data processing and analysis
 numpy>=1.24.0
-Pillow>=9.5.0
 pandas>=2.0.0
+
+# Visualization
+plotly>=5.15.0
+
+# File handling and utilities
+pathlib2>=2.3.7
+tempfile-wrapper>=1.0.0
+
+# Logging (built-in, but ensuring compatibility)
+# logging is part of Python standard library
+
+# Additional dependencies for YOLOv8 and tracking
+Pillow>=9.5.0
+PyYAML>=6.0
+requests>=2.31.0
+scipy>=1.10.0
 tqdm>=4.65.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# YOLO + Torch (ultralytics will pull torch automatically)
-ultralytics>=8.0.0
-
-# OpenCV (headless, no GUI)
-opencv-python-headless>=4.8.0
-
-# Tracking dependencies
-lap>=0.4.0
-scipy>=1.10.0
-filterpy>=1.4.5
-
-# Video handling
+# For advanced video processing
 imageio>=2.31.0
 imageio-ffmpeg>=0.4.8
 
-# Optional system utilities
+# For better performance (optional but recommended)
 psutil>=5.9.0
+
+# For deployment (optional)
+watchdog>=3.0.0
+
+# Additional utilities that might be needed
+python-dateutil>=2.8.2
+pytz>=2023.3
