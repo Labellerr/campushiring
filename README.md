@@ -1,9 +1,5 @@
 # YOLOv8 Object Detection & Segmentation 
 
-# Example
-![1288](https://github.com/user-attachments/assets/34cebafe-ef35-44c0-9cd5-07a42a2093d2)
-
-
 
 # Project Overview 
 
@@ -39,6 +35,7 @@ model.train(
 
 
 # Prediction 
+![Uploading 2549.jpg…]()
 
 -- for test images
 from ultralytics import YOLO 
@@ -54,3 +51,4 @@ for r in results:
   r.save() 
 
 -- output is saved in runs/predict/
+![2549](https://github.com/user-attachments/assets/80d9da61-4100-47fb-9deb-b02fbfa614b5)
