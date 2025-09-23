@@ -2,7 +2,7 @@
 
 **Submitted by: Gurnoor Kaur**
 
-This repository contains the completed technical assessment for the Labellerr Computer Vision Internship. It details an end-to-end machine learning workflow, covering the entire lifecycle from data acquisition and annotation to model training, evaluation, and deployment for a real-world object tracking application.
+> **Submission Note:** The complete project, including all code, the final notebook, and this report, is ready. I am currently resolving a local SSH key authentication issue (`fatal: Could not read from remote repository`) that is preventing me from pushing the latest commits. The code will be pushed to the repository as soon as this is fixed.
 
 ---
 ## 🚀 Project Overview
@@ -16,7 +16,7 @@ The goal of this project was to build a robust system capable of performing inst
 * **Environment:** Google Colab (GPU), Python
 
 **Key Features:**
-1.  **Data-Centric Approach:** Utilized the Labellerr platform for precise data annotation, which is foundational to the model's performance.
+1.  **Data-Centric Approach:** Utilized the Labellerr platform for precise data annotation, forming the foundation of the model's performance.
 2.  **Advanced Deep Learning:** Fine-tuned a state-of-the-art YOLOv8-Seg model for accurate instance segmentation.
 3.  **High-Performance Tracking:** Integrated the trained model with ByteTrack to maintain consistent object identities across video frames, even through occlusions.
 4.  **Reproducible Workflow:** The entire process is encapsulated in a Google Colab notebook, ensuring full reproducibility.
@@ -33,7 +33,7 @@ A dataset of traffic images was sourced from Kaggle. A subset of 150 images was 
 A project was created on the Labellerr platform, and the training images were uploaded. Using Labellerr's advanced annotation tools, precise **polygon masks** were drawn for all instances of the `Vehicle` and `Pedestrian` classes. After annotation was complete, the labels were exported in the COCO JSON format.
 
 ##### **3. Model Training (YOLOv8-Seg)**
-A Python script was used to convert the exported COCO annotations into the YOLOv8-Seg label format required for training. The dataset was then split into an 80/20 train/validation ratio for robust model evaluation. A pre-trained `yolov8s-seg.pt` model was fine-tuned on this custom dataset for 100 epochs.
+A Python script converted the exported COCO annotations into the YOLOv8-Seg label format required for training. The dataset was then split into an 80/20 train/validation ratio for robust model evaluation. A pre-trained `yolov8s-seg.pt` model was fine-tuned on this custom dataset for 100 epochs.
 
 ##### **4. Model Evaluation & Inference**
 The model's performance was evaluated using standard metrics on the validation set. The final trained model was then used to run inference on the 50 unseen test images, generating high-quality segmentation masks.
