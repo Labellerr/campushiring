@@ -53,8 +53,8 @@ This project focuses on **binary class segmentation and tracking**:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/vehicle-pedestrian-segmentation.git
-cd vehicle-pedestrian-segmentation
+git clone https://github.com/GoldBug79/Paarth_Pokuri.git
+cd Paarth_Pokuri
 ```
 
 ### 2. Create Virtual Environment
