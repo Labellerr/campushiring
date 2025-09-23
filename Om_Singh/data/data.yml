@@ -1,0 +1,9 @@
+# Paths are relative to this YAML file's location
+train: ./train/images
+val: ./val/images
+
+# Number of classes
+nc: 2
+
+# Class names
+names: ['Vehicle', 'Pedestrian']
