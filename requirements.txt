@@ -1,0 +1,34 @@
+# Core
+python>=3.8
+pip
+
+# YOLOv8-seg (Ultralytics)
+ultralytics>=8.0.XXX  # use latest stable from pip
+
+# COCO tools and metrics
+pycocotools
+opencv-python
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+tqdm
+albumentations
+
+# Tracker (ByteTrack) - install an implementation; adjust if you prefer a fork
+bytetrack-pytorch==0.4.0  # example; if unavailable use 'bytetrack' package or tracktor repo
+deep_sort_realtime  # optional alternative
+
+# Web demo
+fastapi
+uvicorn[standard]
+python-multipart
+aiofiles
+
+# Labellerr (SDK) - fill real package name if available, else use requests
+requests
+
+# Utils
+Shapely
+Pillow
