@@ -5,10 +5,6 @@ import math
 from pathlib import Path
 from ultralytics import YOLO
 
-PEDESTRIAN_KEY = "pedestrian"
-VEHICLE_KEY = "vehicle"
-VEHICLE_NAMES = {"car", "truck", "bus", "motorcycle", "bicycle"}  # COCO vehicle classes
-
 def _safe_fps(val):
     try:
         v = float(val)
@@ -36,14 +32,6 @@ def _open_writer(base_output_path: str, fps: float, size: tuple[int, int]):
         if writer.isOpened():
             return writer, str(out_path), fourcc_name
     return None, None, None
-
-def _normalize_class(name: str) -> str:
-    n = name.lower()
-    if "person" in n:
-        return PEDESTRIAN_KEY
-    if any(v in n for v in VEHICLE_NAMES):
-        return VEHICLE_KEY
-    return VEHICLE_KEY  # treat unknown traffic objects as vehicles to stay binary
 
 def track_video(input_path, output_path, model_weights, json_path):
     try:
@@ -87,13 +75,18 @@ def track_video(input_path, output_path, model_weights, json_path):
 
                 for box, track_id, conf, cls_id in zip(boxes, track_ids, confidences, classes):
                     x1, y1, x2, y2 = map(int, box)
-                    orig_name = model.names.get(cls_id, f"class_{cls_id}")  # COCO name like person/car/bus [web:250]
-                    normalized = _normalize_class(orig_name)  # pedestrian or vehicle only [web:253]
+                    orig_name = model.names.get(cls_id, f"class_{cls_id}")
+                    name_l = str(orig_name).lower()
 
-                    # Colors in BGR: pedestrian=green, vehicle=blue [web:247]
-                    color = (0, 255, 0) if normalized == PEDESTRIAN_KEY else (255, 0, 0)
+                    # Binary mapping: person -> pedestrian; everything else -> vehicle
+                    if "person" in name_l:
+                        normalized = "pedestrian"
+                        color = (0, 255, 0)    # green in BGR
+                    else:
+                        normalized = "vehicle"
+                        color = (255, 0, 0)    # blue in BGR
 
-                    cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)  # BGR rectangle [web:247]
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)
                     label = f"{normalized.title()}-#{track_id}"
                     text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)[0]
                     cv2.rectangle(frame, (x1, y1 - text_size[1] - 10), (x1 + text_size[0], y1), color, -1)
@@ -101,7 +94,7 @@ def track_video(input_path, output_path, model_weights, json_path):
 
                     frame_objects.append({
                         "id": int(track_id),
-                        "class": normalized,     # now only 'pedestrian' or 'vehicle'
+                        "class": normalized,     # only 'pedestrian' or 'vehicle'
                         "confidence": float(conf),
                         "bbox": [x1, y1, x2, y2]
                     })
@@ -110,9 +103,4 @@ def track_video(input_path, output_path, model_weights, json_path):
             out.write(frame)
 
         out.release()
-        with open(json_path, "w", encoding="utf-8") as f:
-            json.dump(results_data, f, indent=2)
-
-        return True, f"Saved {frame_id} frames using {used_codec} at {actual_out_path}"
-    except Exception as e:
-        return False, f"An error occurred during processing: {str(e)}"
+        with open(json_
