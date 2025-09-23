@@ -1,4 +1,3 @@
-# byte_tracker.py
 import cv2
 import json
 import math
@@ -32,6 +31,37 @@ def _open_writer(base_output_path: str, fps: float, size: tuple[int, int]):
         if writer.isOpened():
             return writer, str(out_path), fourcc_name
     return None, None, None
+
+def _get_class_name(model, cls_id: int) -> str:
+    """
+    Robustly fetch a class name from Ultralytics model.names which can be a list/tuple
+    or a dict with int or string keys.
+    """
+    names = getattr(model, "names", None)
+    if isinstance(names, (list, tuple)):
+        if 0 <= cls_id < len(names):
+            return str(names[cls_id])
+    elif isinstance(names, dict):
+        # try int key, then string variants
+        return str(
+            names.get(cls_id)
+            or names.get(int(cls_id), None)
+            or names.get(str(int(cls_id)), None)
+            or names.get(str(cls_id), f"class_{cls_id}")
+        )
+    return f"class_{cls_id}"
+
+def _map_binary(name: str) -> tuple[str, tuple]:
+    """
+    Map any detector name to strictly two labels:
+    - 'pedestrian' if the name indicates a person
+    - 'vehicle' otherwise
+    Colors are BGR as required by OpenCV (green for pedestrians, blue for vehicles).
+    """
+    n = name.strip().lower()
+    if any(tok in n for tok in ("person", "pedestrian", "people", "human")):
+        return "pedestrian", (0, 255, 0)   # green (BGR)
+    return "vehicle", (255, 0, 0)          # blue (BGR)
 
 def track_video(input_path, output_path, model_weights, json_path):
     try:
@@ -75,17 +105,12 @@ def track_video(input_path, output_path, model_weights, json_path):
 
                 for box, track_id, conf, cls_id in zip(boxes, track_ids, confidences, classes):
                     x1, y1, x2, y2 = map(int, box)
-                    orig_name = model.names.get(cls_id, f"class_{cls_id}")
-                    name_l = str(orig_name).lower()
 
-                    # Binary mapping: person -> pedestrian; everything else -> vehicle
-                    if "person" in name_l:
-                        normalized = "pedestrian"
-                        color = (0, 255, 0)    # green in BGR
-                    else:
-                        normalized = "vehicle"
-                        color = (255, 0, 0)    # blue in BGR
+                    # Robust class-name fetch, then strict two-class mapping
+                    raw_name = _get_class_name(model, int(cls_id))          # model.names access can vary [Ultralytics]
+                    normalized, color = _map_binary(raw_name)               # person -> pedestrian, else vehicle
 
+                    # Draw (BGR color order for OpenCV)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)
                     label = f"{normalized.title()}-#{track_id}"
                     text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)[0]
@@ -94,7 +119,7 @@ def track_video(input_path, output_path, model_weights, json_path):
 
                     frame_objects.append({
                         "id": int(track_id),
-                        "class": normalized,     # only 'pedestrian' or 'vehicle'
+                        "class": normalized,     # strictly 'pedestrian' or 'vehicle'
                         "confidence": float(conf),
                         "bbox": [x1, y1, x2, y2]
                     })
@@ -102,9 +127,7 @@ def track_video(input_path, output_path, model_weights, json_path):
             results_data.append({"frame_id": frame_id, "objects": frame_objects})
             out.write(frame)
 
-
         out.release()
-
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(results_data, f, indent=2)
 
