@@ -24,41 +24,31 @@ def upload_controls():
 
 def show_analytics():
     st.subheader("Summary")
-    if st.session_state.get("results_json_path") and os.path.exists(st.session_state["results_json_path"]):
-        with open(st.session_state["results_json_path"], "r", encoding="utf-8") as f:
+    results_json_path = st.session_state.get("results_json_path")
+    if results_json_path and os.path.exists(results_json_path):
+        with open(results_json_path, "r", encoding="utf-8") as f:
             results_data = json.load(f)
         all_objects = [obj for frame in results_data for obj in frame.get("objects", [])]
         if not all_objects:
             st.info("No objects were detected in this video.")
             return
 
-        unique_objects = len({obj["id"] for obj in all_objects})
+        unique_objects = len({obj.get("id") for obj in all_objects})
         frames_processed = len(results_data)
 
-        # Two-class aggregation
-        pedestrian_count = 0
-        vehicle_count = 0
-        vehicle_classes = {"car", "truck", "bus", "motorcycle", "bicycle"}
-        for obj in all_objects:
-            cls_name = obj["class"].lower()
-            if "person" in cls_name:
-                pedestrian_count += 1
-            elif any(vc in cls_name for vc in vehicle_classes):
-                vehicle_count += 1
-
-        c1, c2, c3, c4 = st.columns(4)
+        c1, c2 = st.columns(2)
         c1.metric("Unique Objects", unique_objects)
         c2.metric("Frames", frames_processed)
-        c3.metric("Pedestrians", pedestrian_count)
-        c4.metric("Vehicles", vehicle_count)
     else:
         st.info("Run tracking to see analytics.")
 
 def show_downloads():
     st.subheader("Download Results")
 
-    if st.session_state.get("results_json_path") and os.path.exists(st.session_state["results_json_path"]):
-        with open(st.session_state["results_json_path"], "rb") as jf:
+    # JSON download
+    results_json_path = st.session_state.get("results_json_path")
+    if results_json_path and os.path.exists(results_json_path):
+        with open(results_json_path, "rb") as jf:
             st.download_button(
                 "Download Tracking Results (JSON)",
                 data=jf,
@@ -69,10 +59,12 @@ def show_downloads():
     else:
         st.info("Run tracking to generate and download results JSON.")
 
-    if st.session_state.get("output_video_path") and os.path.exists(st.session_state["output_video_path"]):
-        suffix = Path(st.session_state["output_video_path"]).suffix.lower()
+    # Video download
+    output_video_path = st.session_state.get("output_video_path")
+    if output_video_path and os.path.exists(output_video_path):
+        suffix = Path(output_video_path).suffix.lower()
         mime = "video/mp4" if suffix == ".mp4" else "video/x-msvideo"
-        with open(st.session_state["output_video_path"], "rb") as vf:
+        with open(output_video_path, "rb") as vf:
             st.download_button(
                 "Download Tracked Video",
                 data=vf,
