@@ -11,6 +11,7 @@ st.title("🚦 Vehicle and Pedestrian Tracking with YOLOv8 & ByteTrack")
 
 MODEL_WEIGHTS_PATH = "Shrit_Bansal/video_tracking_demo/model/yolo-seg.pt"
 
+# Sidebar: upload + actions
 with st.sidebar:
     st.header("Upload & Actions")
     uploaded_file = st.file_uploader(
@@ -21,16 +22,18 @@ with st.sidebar:
     run_btn = st.button("🎯 Start Tracking", type="primary", use_container_width=True)
     clear_btn = st.button("Clear Session", use_container_width=True)
 
-# Session state
-for k, v in {
+# Session state defaults
+defaults = {
     "input_video_path": None,
     "output_video_path": None,
     "results_json_path": None,
     "output_suffix": ".mp4",
-}.items():
+}
+for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
+# Clear session and temp artifacts
 if clear_btn:
     for key in ("input_video_path", "output_video_path", "results_json_path"):
         p = st.session_state.get(key)
@@ -66,28 +69,34 @@ with tab_overview:
 with tab_video:
     col_left, col_right = st.columns([1, 1])
 
+    # Original
     with col_left:
         st.subheader("Original")
         if st.session_state.input_video_path and os.path.exists(st.session_state.input_video_path):
+            # Let Streamlit infer the format for the original
             st.video(st.session_state.input_video_path)
         else:
             st.info("Upload a video from the sidebar to preview.")
 
+    # Tracked (placeholder updated after processing)
     with col_right:
         st.subheader("Tracked")
-        # Create a placeholder we can update later in this same run
-        tracked_placeholder = st.empty()  # will be updated after processing [docs]
+        tracked_placeholder = st.empty()  # updated later in the same run
+
         if st.session_state.output_video_path and os.path.exists(st.session_state.output_video_path):
-            if Path(st.session_state.output_video_path).suffix.lower() == ".avi":
+            ext = Path(st.session_state.output_video_path).suffix.lower()
+            if ext == ".mp4":
+                tracked_placeholder.video(st.session_state.output_video_path, format="video/mp4")
+            else:
                 st.warning("The preview may not play for AVI in some browsers; use the download button below.")
-            tracked_placeholder.video(st.session_state.output_video_path)
-            suffix = Path(st.session_state.output_video_path).suffix.lower()
-            mime = "video/mp4" if suffix == ".mp4" else "video/x-msvideo"
+                tracked_placeholder.video(st.session_state.output_video_path)
+
+            mime = "video/mp4" if ext == ".mp4" else "video/x-msvideo"
             with open(st.session_state.output_video_path, "rb") as vf:
                 st.download_button(
                     "Download Tracked Video",
                     data=vf,
-                    file_name=f"tracked_output{suffix}",
+                    file_name=f"tracked_output{ext}",
                     mime=mime,
                     use_container_width=True,
                 )
@@ -153,6 +162,7 @@ def _resolve_actual_output(base_output_path: str, tmp_dir: str) -> str | None:
             return str(p)
     return None
 
+# Run tracking
 if run_btn:
     if not os.path.exists(MODEL_WEIGHTS_PATH):
         st.error(f"❌ Model weights file not found at '{MODEL_WEIGHTS_PATH}'")
@@ -177,23 +187,27 @@ if run_btn:
                     actual_writer_path = _resolve_actual_output(requested_output, tmp_dir)
                     if actual_writer_path and os.path.exists(actual_writer_path):
                         suffix = Path(actual_writer_path).suffix
+                        # Persist video to durable temp file
                         with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as out_tf:
                             out_tf.flush()
                             shutil.copyfile(actual_writer_path, out_tf.name)
                             st.session_state.output_video_path = out_tf.name
                             st.session_state.output_suffix = suffix
 
+                        # Persist JSON
                         if os.path.exists(results_json_tmp):
                             with tempfile.NamedTemporaryFile(delete=False, suffix=".json") as js_tf:
                                 js_tf.flush()
                                 shutil.copyfile(results_json_tmp, js_tf.name)
                                 st.session_state.results_json_path = js_tf.name
 
-                        # Immediately update the tracked video area without another click
-                        with tracked_placeholder.container():  # uses the placeholder created in the Video tab
-                            if suffix.lower() == ".avi":
+                        # Update tracked area immediately in this run
+                        with tracked_placeholder.container():
+                            if suffix.lower() == ".mp4":
+                                st.video(st.session_state.output_video_path, format="video/mp4")
+                            else:
                                 st.warning("The preview may not play for AVI in some browsers; use the download button below.")
-                            st.video(st.session_state.output_video_path)
+                                st.video(st.session_state.output_video_path)
                             mime = "video/mp4" if suffix.lower() == ".mp4" else "video/x-msvideo"
                             with open(st.session_state.output_video_path, "rb") as vf:
                                 st.download_button(
@@ -206,8 +220,8 @@ if run_btn:
 
                         status.update(label="Completed successfully!", state="complete", expanded=False)
                         st.toast("🎉 Tracking completed!")
-                        # Optional alternative: force a full redraw of tabs
-                        # st.rerun()  # uncomment if you prefer a full refresh [docs]
+                        # Ensure tabs re-render with new paths on next cycle
+                        st.rerun()
                     else:
                         status.update(label="Failed: Could not locate output video file.", state="error", expanded=True)
                 else:
