@@ -20,26 +20,12 @@ def upload_controls():
             help="Drag & drop or browse a video file to track",
         )
         run_btn = st.button("🎯 Start Tracking", type="primary", use_container_width=True)
-        clear_btn = st.button("Clear Session", use_container_width=True)
-    return uploaded_file, run_btn, clear_btn
-
-def clear_session():
-    for key in ("input_video_path", "output_video_path", "results_json_path"):
-        p = st.session_state.get(key)
-        if p and os.path.exists(p):
-            try:
-                os.remove(p)
-            except Exception:
-                pass
-        st.session_state[key] = None
-    st.session_state.output_suffix = ".mp4"
-    st.toast("Session cleared")
-    st.experimental_rerun()
+    return uploaded_file, run_btn
 
 def show_analytics():
     st.subheader("Summary")
-    if st.session_state.results_json_path and os.path.exists(st.session_state.results_json_path):
-        with open(st.session_state.results_json_path, "r", encoding="utf-8") as f:
+    if st.session_state.get("results_json_path") and os.path.exists(st.session_state["results_json_path"]):
+        with open(st.session_state["results_json_path"], "r", encoding="utf-8") as f:
             results_data = json.load(f)
         all_objects = [obj for frame in results_data for obj in frame.get("objects", [])]
         if not all_objects:
@@ -47,10 +33,9 @@ def show_analytics():
             return
 
         unique_objects = len({obj["id"] for obj in all_objects})
-        c1, c2 = st.columns(2)
-        c1.metric("Unique Objects Tracked", unique_objects)
-        c2.metric("Frames Processed", len(results_data))
+        frames_processed = len(results_data)
 
+        # Two-class aggregation
         pedestrian_count = 0
         vehicle_count = 0
         vehicle_classes = {"car", "truck", "bus", "motorcycle", "bicycle"}
@@ -61,14 +46,19 @@ def show_analytics():
             elif any(vc in cls_name for vc in vehicle_classes):
                 vehicle_count += 1
 
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Unique Objects", unique_objects)
+        c2.metric("Frames", frames_processed)
+        c3.metric("Pedestrians", pedestrian_count)
+        c4.metric("Vehicles", vehicle_count)
     else:
         st.info("Run tracking to see analytics.")
 
 def show_downloads():
     st.subheader("Download Results")
 
-    if st.session_state.results_json_path and os.path.exists(st.session_state.results_json_path):
-        with open(st.session_state.results_json_path, "rb") as jf:
+    if st.session_state.get("results_json_path") and os.path.exists(st.session_state["results_json_path"]):
+        with open(st.session_state["results_json_path"], "rb") as jf:
             st.download_button(
                 "Download Tracking Results (JSON)",
                 data=jf,
@@ -79,10 +69,10 @@ def show_downloads():
     else:
         st.info("Run tracking to generate and download results JSON.")
 
-    if st.session_state.output_video_path and os.path.exists(st.session_state.output_video_path):
-        suffix = Path(st.session_state.output_video_path).suffix.lower()
+    if st.session_state.get("output_video_path") and os.path.exists(st.session_state["output_video_path"]):
+        suffix = Path(st.session_state["output_video_path"]).suffix.lower()
         mime = "video/mp4" if suffix == ".mp4" else "video/x-msvideo"
-        with open(st.session_state.output_video_path, "rb") as vf:
+        with open(st.session_state["output_video_path"], "rb") as vf:
             st.download_button(
                 "Download Tracked Video",
                 data=vf,
@@ -105,8 +95,6 @@ def _resolve_actual_output(base_output_path: str, tmp_dir: str) -> str | None:
     return None
 
 def main():
-    uploaded_file, run_btn, clear_btn = upload_controls()
-
     # Initialize session state keys
     for k, v in {
         "input_video_path": None,
@@ -117,20 +105,19 @@ def main():
         if k not in st.session_state:
             st.session_state[k] = v
 
-    if clear_btn:
-        clear_session()
+    uploaded_file, run_btn = upload_controls()
 
-    if uploaded_file and not st.session_state.input_video_path:
+    if uploaded_file and not st.session_state["input_video_path"]:
         suffix = os.path.splitext(uploaded_file.name)[1] or ".mp4"
         with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tfile:
             tfile.write(uploaded_file.getbuffer())
-            st.session_state.input_video_path = tfile.name
+            st.session_state["input_video_path"] = tfile.name
 
     st.subheader("How it works")
     st.markdown(
         "1) Upload a video in the sidebar and start tracking.  \n"
-        "2) View tracked detections summary below.  \n"
-        "3) Download tracked video and JSON results from the panel."
+        "2) Review the summary metrics below.  \n"
+        "3) Download the tracked video and JSON results."
     )
 
     show_analytics()
@@ -139,18 +126,18 @@ def main():
     if run_btn:
         if not os.path.exists(MODEL_WEIGHTS_PATH):
             st.error(f"❌ Model weights file not found at '{MODEL_WEIGHTS_PATH}'")
-        elif not st.session_state.input_video_path or not os.path.exists(st.session_state.input_video_path):
+        elif not st.session_state["input_video_path"] or not os.path.exists(st.session_state["input_video_path"]):
             st.warning("Please upload a video first.")
         else:
             with tempfile.TemporaryDirectory() as tmp_dir:
-                base_name = f"tracked_{os.path.basename(st.session_state.input_video_path)}"
+                base_name = f"tracked_{os.path.basename(st.session_state['input_video_path'])}"
                 requested_output = os.path.join(tmp_dir, base_name)
                 results_json_tmp = os.path.join(tmp_dir, "tracking_results.json")
 
                 with st.status("Processing video...", expanded=True) as status:
                     st.write("Loading model and preparing video...")
                     success, message = track_video(
-                        st.session_state.input_video_path,
+                        st.session_state["input_video_path"],
                         requested_output,
                         MODEL_WEIGHTS_PATH,
                         results_json_tmp,
@@ -163,14 +150,14 @@ def main():
                             with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as out_tf:
                                 out_tf.flush()
                                 shutil.copyfile(actual_writer_path, out_tf.name)
-                                st.session_state.output_video_path = out_tf.name
-                                st.session_state.output_suffix = suffix
+                                st.session_state["output_video_path"] = out_tf.name
+                                st.session_state["output_suffix"] = suffix
 
                             if os.path.exists(results_json_tmp):
                                 with tempfile.NamedTemporaryFile(delete=False, suffix=".json") as js_tf:
                                     js_tf.flush()
                                     shutil.copyfile(results_json_tmp, js_tf.name)
-                                    st.session_state.results_json_path = js_tf.name
+                                    st.session_state["results_json_path"] = js_tf.name
 
                             status.update(label="Completed successfully!", state="complete", expanded=False)
                             st.toast("🎉 Tracking completed!")
