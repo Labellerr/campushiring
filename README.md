@@ -1,6 +1,4 @@
-Of course. Here is a professional README file tailored for your project, under the name Gurnoor Kaur.
-
-End-to-End Image Segmentation & Object Tracking Pipeline
+# End-to-End Image Segmentation & Object Tracking Pipeline
 This repository contains the completed technical assessment for the Labellerr Computer Vision Internship, submitted by Gurnoor Kaur. It demonstrates a full-stack, end-to-end machine learning workflow, covering the entire lifecycle from data acquisition and annotation to model training, evaluation, and deployment for a real-world tracking application.
 
 🚀 Project Overview
