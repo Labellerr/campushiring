@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+numpy
+pandas
+plotly
+Pillow
+ultralytics
+# For CPU-only deployment on free services
+torch --index-url https://download.pytorch.org/whl/cpu
