@@ -1,6 +1,6 @@
 # Akash Rawal 23104124- YOLOv11 Segmentation & ByteTrack 
 
-![demo web app created](Akash_rawal_4124\2025-09-2317-09-37-ezgif.com-video-to-gif-converter.gif)
+![demo web app created](Akash_rawal\Akash_rawal_4124\2025-09-2317-09-37-ezgif.com-video-to-gif-converter.gif)
 
 
 ## 1. Project Overview
