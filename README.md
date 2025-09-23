@@ -15,6 +15,7 @@
 
 ## 3. Training
 - Model: YOLO11n-seg
+- Model training code : `Akash_rawal_4124\model_train.ipynb`
 - Epochs: 80 (trained on CPU)
 - Training images: `Akash_rawal_4124\Datasets\mydataset\images\train`
 - Trained Model: `Akash_rawal_4124\runs\segment\train3\weights\best.pt`
@@ -25,6 +26,7 @@
 - pridiction : `Akash_rawal_4124\runs\segment\predict`
 - Example results: Images/videos + JSON output for tracked objects.
 - JSON : `Akash_rawal_4124\Datasets\mydataset\annotations\instances_test.json`
+- Upload to labellerr : `Akash_rawal\Akash_rawal_4124\model_testing_using_sdk.ipynb`
 
 ## 5. Labellerr Integration
 - Annotated training image on labellerr with SAM
