@@ -102,5 +102,12 @@ def track_video(input_path, output_path, model_weights, json_path):
             results_data.append({"frame_id": frame_id, "objects": frame_objects})
             out.write(frame)
 
+
         out.release()
-        with open(json_
+
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(results_data, f, indent=2)
+
+        return True, f"Saved {frame_id} frames using {used_codec} at {actual_out_path}"
+    except Exception as e:
+        return False, f"An error occurred during processing: {str(e)}"
