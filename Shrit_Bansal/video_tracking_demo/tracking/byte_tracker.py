@@ -1,6 +1,8 @@
 import cv2
 import json
 import math
+import shutil
+import subprocess
 from pathlib import Path
 from ultralytics import YOLO
 
@@ -8,21 +10,21 @@ def _safe_fps(val):
     try:
         v = float(val)
         if not math.isfinite(v) or v <= 0:
-            return 25.0  # default if CAP_PROP_FPS is 0/NaN
+            return 25.0
         return v
     except Exception:
         return 25.0
 
 def _open_writer(base_output_path: str, fps: float, size: tuple[int, int]):
     """
-    Try broadly-supported codecs first to avoid OpenH264 dependency.
+    Prefer browser-playable H.264 (avc1) if available; fall back to mp4v/XVID.
     Returns (writer, actual_output_path, codec_name) or (None, None, None).
     """
     base = Path(base_output_path)
     candidates = [
-        ("mp4v", ".mp4"),  # MP4 (MPEG-4 Part 2), usually works without external DLLs
-        ("XVID", ".avi"),  # AVI fallback (widely available on Windows)
-        ("avc1", ".mp4"),  # H.264; requires matching OpenH264 DLL on Windows
+        ("avc1", ".mp4"),  # H.264 (browser-friendly)
+        ("mp4v", ".mp4"),  # MPEG-4 Part 2 (not browser-friendly)
+        ("XVID", ".avi"),  # AVI fallback (not browser-friendly)
     ]
     for fourcc_name, ext in candidates:
         out_path = base.with_suffix(ext)
@@ -35,6 +37,20 @@ def _open_writer(base_output_path: str, fps: float, size: tuple[int, int]):
         if writer.isOpened():
             return writer, str(out_path), fourcc_name
     return None, None, None
+
+def _has_ffmpeg():
+    return shutil.which("ffmpeg") is not None
+
+def _transcode_to_h264(src_path: str, dst_path: str) -> bool:
+    # Fast, broadly compatible H.264 for web playback
+    cmd = [
+        "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
+        "-i", src_path,
+        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
+        "-preset", "veryfast", "-crf", "23",
+        "-an", dst_path
+    ]
+    return subprocess.run(cmd).returncode == 0
 
 def track_video(input_path, output_path, model_weights, json_path):
     try:
@@ -49,10 +65,9 @@ def track_video(input_path, output_path, model_weights, json_path):
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         cap.release()
 
-        # Robust writer init: prefer mp4v, then XVID, last resort avc1 (H.264)
         out, actual_out_path, used_codec = _open_writer(output_path, fps, (width, height))
         if out is None:
-            return False, "Failed to initialize VideoWriter with mp4v/XVID/avc1"
+            return False, "Failed to initialize VideoWriter with avc1/mp4v/XVID"
 
         results_data = []
         frame_id = 0
@@ -100,10 +115,17 @@ def track_video(input_path, output_path, model_weights, json_path):
 
         out.release()
 
+        # If we didn't get avc1, try to transcode to H.264 MP4 for browser playback
+        final_out_path = actual_out_path
+        dst_mp4 = str(Path(output_path).with_suffix(".mp4"))
+        need_transcode = (Path(actual_out_path).suffix.lower() != ".mp4") or (used_codec.lower() != "avc1")
+        if need_transcode and _has_ffmpeg():
+            if _transcode_to_h264(actual_out_path, dst_mp4):
+                final_out_path = dst_mp4
+
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(results_data, f, indent=2)
 
-        return True, f"Saved {frame_id} frames using {used_codec} at {actual_out_path}"
-
+        return True, f"Saved {frame_id} frames using {used_codec}; final: {final_out_path}"
     except Exception as e:
         return False, f"An error occurred during processing: {str(e)}"
