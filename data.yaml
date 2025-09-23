@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/campushiring/arvind_mankotia_labellerr/data/images/train
+val:   /content/drive/MyDrive/campushiring/arvind_mankotia_labellerr/data/images/val
+test:  /content/drive/MyDrive/campushiring/arvind_mankotia_labellerr/data/images/test
+
+nc: 2
+names: ['Vehicle','Pedestrian']
