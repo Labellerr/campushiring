@@ -13,7 +13,7 @@ st.set_page_config(
 st.title("🚦 Vehicle and Pedestrian Tracking with YOLOv8 & ByteTrack")
 
 # updated weights path to your repo layout
-MODEL_WEIGHTS_PATH = "model/yolo-seg.pt"
+MODEL_WEIGHTS_PATH = "Shrit_Bansal/video_tracking_demo/model/yolo-seg.pt"
 
 if not os.path.exists(MODEL_WEIGHTS_PATH):
     st.error(f"❌ Model weights file not found at '{MODEL_WEIGHTS_PATH}'")
