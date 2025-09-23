@@ -1,0 +1,5 @@
+path: ./export-#SLIXifUH6eZkxPkLhofb
+train: images
+val: images
+nc: 3
+names: ['Buses', 'Trucks', 'Cars']
