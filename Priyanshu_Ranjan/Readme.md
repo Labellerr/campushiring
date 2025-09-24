@@ -1,5 +1,8 @@
 # Vehicle and Pedestrian Segmentation & Tracking
 
+**Web App:** [Streamlit App](https://vehicle-and-pedestrian.streamlit.app/)  
+**Testing & Evaluation Data:** [Google Drive Folder](https://drive.google.com/drive/folders/14WCTRHgzAPkKS2EeNOwC9tG27xJZALDt)
+
 ## Project Overview
 This project implements a complete computer vision pipeline for the segmentation and tracking of vehicles and pedestrians in video streams. It detects objects, tracks them across frames, and provides annotated outputs and structured JSON data.  
 
@@ -34,16 +37,16 @@ This project implements a complete computer vision pipeline for the segmentation
 - Mask mAP50: 0.72  
 
 ***Model Evaluation Curves***
-![Model Evaluation Curves](utils/image-0.png)
+- ![Model Evaluation Curves](utils/image-0.png)
 
 ***Confusion Matrix***
-![Confusion Matrix](utils/image-1.png)
+- ![Confusion Matrix](utils/image-1.png)
 
 ***Final Tracked Video Screenshot Image***
-![Final Tracked Video Screenshot Image](utils/image-2.png)
+- ![Final Tracked Video Screenshot Image](utils/image-2.png)
 
 ***Final Interface Screenshot Image***
-![Final Interface Screenshot Image](utils/image-3.png)
+- ![Final Interface Screenshot Image](utils/image-3.png)
 ---
 
 ## Development Workflow
@@ -60,7 +63,7 @@ This project implements a complete computer vision pipeline for the segmentation
 - **Misclassification:** Dataset expansion and refined annotations (future improvement)  
 
 ***Workflow Diagram***
-![Workflow Diagram](utils/image-4.png)
+- ![Workflow Diagram](utils/image-4.png)
 
 ---
 
@@ -69,5 +72,5 @@ This project implements a complete computer vision pipeline for the segmentation
 - Streamlit enables rapid deployment but requires video optimization  
 - Future work: larger datasets, more classes, improved architectures, cloud-based streaming  
 
-**Web App:** [Streamlit App](https://labellerr-project.streamlit.app/)  
+**Web App:** [Streamlit App](https://vehicle-and-pedestrian.streamlit.app/)  
 **Testing & Evaluation Data:** [Google Drive Folder](https://drive.google.com/drive/folders/14WCTRHgzAPkKS2EeNOwC9tG27xJZALDt)
