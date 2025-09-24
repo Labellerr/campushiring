@@ -1,0 +1,20 @@
+{
+  "name": "campushiring",
+  "version": "1.0.0",
+  "description": "This repository is part of the hiring process at Labellerr AI where students complete the assignment and raise a PR. Only the assignments which follow the guidelines will be accepted",
+  "homepage": "https://github.com/EndlessGoodness/campushiring#readme",
+  "bugs": {
+    "url": "https://github.com/EndlessGoodness/campushiring/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndlessGoodness/campushiring.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
