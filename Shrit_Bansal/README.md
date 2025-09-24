@@ -2,6 +2,9 @@
 # Live demo
 https://campushiring-h9uqxszmobdjmcfk58hnd2.streamlit.app/
 
+## Demo video (Google Drive)
+https://drive.google.com/file/d/1UjMnmuFf0Ul2E0QPMIGhucEY9mllzKE3/view?usp=sharing
+
 # End-to-End Vehicle & Pedestrian Segmentation and Tracking
 This repository contains an end-to-end workflow for semantic or instance segmentation and multi-object tracking of vehicles and pedestrians.
 
