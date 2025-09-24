@@ -1,0 +1,69 @@
+# End-to-End Image Segmentation & Object Tracking Pipeline
+
+## 📖 Project Overview
+This project is an implementation of the **AI Software Engineer Internship Assignment** provided by [Labellerr](https://www.labellerr.com).  
+The goal is to build an **end-to-end image segmentation and object tracking workflow** using **YOLO-Seg** and **ByteTrack**, integrated with the **Labellerr Platform**.
+
+The pipeline demonstrates:
+- Dataset creation and annotation with Labellerr
+- Training a YOLO segmentation model
+- Running inference and evaluating results
+- Integrating ByteTrack for object tracking in videos
+- Exporting tracked outputs to JSON
+
+---
+
+## ⚙️ Tech Stack
+- **Python**  
+- **YOLOv8-Seg (Ultralytics)**  
+- **ByteTrack**  
+- **Labellerr SDK & Platform**  
+- **Google Colab / Kaggle GPU**  
+
+---
+
+## 🗂 Project Workflow
+1. **Data Collection**  
+   - Gathered ~150–200 raw images containing vehicles & pedestrians.  
+   - Mixed self-collected and online permissibly licensed datasets.  
+
+2. **Annotation with Labellerr**  
+   - Created a training project on Labellerr.  
+   - Annotated ~100 images with polygon masks.  
+   - Exported labels in YOLO-compatible format.  
+
+3. **Training YOLO-Seg**  
+   - Fine-tuned `yolov8n-seg` for 100 epochs.  
+   - Logged training metrics (IoU, mAP, confusion matrix).  
+
+4. **Inference & Evaluation**  
+   - Ran inference on test images.  
+   - Generated predictions and evaluated results.  
+
+5. **Model Review with Labellerr**  
+   - Uploaded predictions via Labellerr SDK as pre-annotations.  
+   - Verified predictions using Labellerr UI.  
+
+6. **Video Tracking with ByteTrack**  
+   - Integrated YOLO-Seg outputs with ByteTrack.  
+   - Implemented a simple video upload & tracking pipeline.  
+   - Exported `results.json` with tracked object IDs, classes, bounding boxes, and frame numbers.  
+
+---
+
+## 📊 Results
+- **Training Accuracy:** XX%  
+- **mAP (50-95):** XX%  
+- **IoU:** XX%  
+- **Inference speed:** XX FPS  
+
+*(Replace XX with your actual results)*
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone Repo
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
