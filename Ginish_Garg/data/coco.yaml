@@ -1,0 +1,5 @@
+# Update absolute paths if running locally; in Colab, mount /content and adjust
+train: data/yolo_data/images/train
+val:   data/yolo_data/images/val
+nc: 2
+names: ['vehicle', 'pedestrian']
