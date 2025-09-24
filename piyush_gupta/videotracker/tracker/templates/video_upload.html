@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Video Tracking</title>
+    <style>
+        /* Reset & basic styles */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f4ff, #d9e6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container */
+        .container {
+            background: #ffffff;
+            padding: 2.5em 3em;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 400px;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1.5em;
+            color: #1f3c88;
+        }
+
+        /* Input & button */
+        .box {
+            margin: 1.2em 0;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 0.6em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="file"]:hover {
+            border-color: #3172ce;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.7em 1.5em;
+            background: #3172ce;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #2455a3;
+            transform: translateY(-2px);
+        }
+
+        /* Results section */
+        .results {
+            margin-top: 2em;
+            text-align: left;
+            background: #f5f8ff;
+            padding: 1.5em;
+            border-radius: 10px;
+        }
+
+        .results p {
+            margin-bottom: 1em;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .results a.btn {
+            margin-bottom: 1em;
+            display: inline-block;
+        }
+
+        /* Larger video */
+        video {
+            width: 100%;
+            max-width: 720px; /* Make video bigger */
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-top: 0.8em;
+        }
+
+        /* Loader styles */
+        #loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(255,255,255,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            display: none; /* Hidden by default */
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3172ce;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Video Object Tracking</h2>
+        <form method="POST" enctype="multipart/form-data" id="uploadForm">
+            {% csrf_token %}
+            <div class="box">
+                <input type="file" name="video" accept="video/*" required>
+            </div>
+            <div class="box">
+                <button class="btn" type="submit">Submit</button>
+            </div>
+        </form>
+
+        {% if results_ready %}
+        <div class="results">
+            <p>🎉 Video processed successfully!</p>
+            <a class="btn" href="/media/uploads/{{json_filename}}" download>Download results.json</a>
+            <video controls>
+                <source src="/media/uploads/{{video_filename}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Loader Overlay -->
+    <div id="loader-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function() {
+            // Show the loader overlay on form submit
+            document.getElementById('loader-overlay').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
