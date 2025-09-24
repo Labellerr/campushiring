@@ -1,0 +1,37 @@
+# YOLOv8 for object detection
+ultralytics==8.1.0
+
+# ByteTrack for multi-object tracking
+bytetrack-python==0.2.2
+
+# Streamlit for web app interface
+streamlit==1.28.0
+
+# Labellerr SDK for annotation project integration
+labellerr-sdk==0.1.5   # Replace with actual latest version if different
+
+# OpenCV for image and video processing
+opencv-python==4.7.0.72
+
+# Numpy for numerical computations
+numpy==1.25.0
+
+# Pandas for data handling
+pandas==2.1.0
+
+# Torch for PyTorch backend (required by YOLOv8)
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# Matplotlib for plotting (optional, if you visualize results)
+matplotlib==3.8.1
+
+# Pillow for image handling
+Pillow==10.0.0
+
+# tqdm for progress bars
+tqdm==4.66.0
+
+# requests (optional, if Labellerr SDK or other scripts need HTTP requests)
+requests==2.31.0
