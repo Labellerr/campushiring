@@ -1,6 +1,5 @@
 # campushiring
-This repository is part of the hiring process at Labellerr AI where students complete the assignment and raise a PR. Only the assignments which follow the guidelines will be accepted
-
+This repository is part of the hiring process at Labellerr AI where students complete the assignment and raise a PR. Only the assignments which follow the guidelines will be accepted.
 
 # Building an Object Tracker with Labellerr + YOLOv8 + ByteTrack
 

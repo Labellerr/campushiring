@@ -1,0 +1,6 @@
+train: data/vehicles_pedestrians/images/train
+val: data/vehicles_pedestrians/images/val
+test: data/vehicles_pedestrians/images/test
+names:
+  0: person
+  1: vehicle
