@@ -1,31 +1,56 @@
+
+# Live demo
+https://campushiring-h9uqxszmobdjmcfk58hnd2.streamlit.app/
+
 # End-to-End Vehicle & Pedestrian Segmentation and Tracking
+This repository contains an end-to-end workflow for semantic or instance segmentation and multi-object tracking of vehicles and pedestrians.
 
-This repository contains the full solution for an end-to-end project focused on semantic segmentation and multi-object tracking of vehicles and pedestrians.
-
-## Project Summary
-
+## Project summary
 - Collected diverse street images via the Unsplash API.  
-- Annotated images with Labellerr using AI-assisted polygon masks for efficient labeling.  
-- Fine-tuned a YOLO-Seg model for feature-rich segmentation.  
+- Annotated images in Labellerr using AI-assisted polygon masks for efficient labeling.  
+- Fine-tuned a YOLO-Seg model on the labeled dataset.  
 - Integrated ByteTrack for multi-object tracking across video frames.  
-- Developed a Streamlit app for interactive video upload, tracking visualization, and artifact downloads.
+- Built a Streamlit app for video upload, tracking, and artifact downloads.
 
-## Features
+## Features 
+- Real-time tracking with persistent identity assignment.  
+- Exports a tracked video and a detailed JSON of tracking results.  
+- Modular structure for training, evaluation, and deployment.
 
-- AI-assisted labeling to speed up annotation.  
-- Real-time video object tracking with persistent identity assignment.  
-- Export of both the tracked video (.mp4) and detailed JSON tracking results.  
-- Modular codebase for training, evaluation, and deployment.
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+  
-- Install dependencies:  
-
+## Getting started
+- Python 3.8 or newer.  
+- Install dependencies:
+```
 pip install -r requirements.txt
+```
+
+## Data and labeling
+- Curated 150–200 permissibly licensed images of street scenes and maintained a Sources.md with attributions.  
+- Created a Labellerr project, defined classes for vehicles and pedestrians, and label with polygon masks using the AI-assist tool.  
+- Exported labels in a YOLO-Seg compatible format and keep disjoint train, val, and test splits.
+
+## Training and validation
+- Train a lightweight YOLO-Seg model for fast iteration and log metrics and curves.  
+- Validate on a held-out set and capture mAP, precision/recall, F1, PR curves, confusion matrix, and representative qualitative results.
+
+## Tracking and JSON export
+- Used YOLO tracking with ByteTrack to assign stable IDs across frames.  
+- Generated a results.json capturing frame index, class, confidence, and bounding box per tracked object.
+
+## App usage
+- Launch the Streamlit app, upload a video, run tracking, and download the processed video and results.json.  
+
+## Results
+- mAP50: 0.5499  
+- mAP50-95: 0.3438  
+- Precision: 0.5612  
+- Recall: 0.6165  
+- F1-Score: 0.5875
+
+## Labellerr review loop
+- Created a separate test project, upload test images, attach model predictions as pre-annotations, and verify suggestions in the UI.
 
 
+## PDF report
+- Included a consolidated PDF covering the journey, how-to guide, model results, metrics, and a concise final summary.
 
-live link : https://campushiring-h9uqxszmobdjmcfk58hnd2.streamlit.app/
