@@ -1,0 +1,7 @@
+names:
+- pedestrian
+- vehicle
+nc: 2
+path: /content/yolo_dataset
+train: train/images
+val: val/images
