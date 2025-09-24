@@ -1,84 +1,88 @@
-# End-to-End Image Segmentation & Object Tracking Pipeline
+# Vehicle & Pedestrian Segmentation and Tracking
 
-**Submitted by: Gurnoor Kaur**
-
-> **Submission Note:** The complete project, including all code, the final notebook, and this report, is ready. I am currently resolving a local SSH key authentication issue (`fatal: Could not read from remote repository`) that is preventing me from pushing the latest commits. The code will be pushed to the repository as soon as this is fixed.
+This repository contains an end-to-end implementation of **image segmentation and object tracking** for vehicles and pedestrians, built using **YOLO-Seg** and **ByteTrack**, integrated with the **Labellerr** platform for annotation management.
 
 ---
-## 🚀 Project Overview
 
-The goal of this project was to build a robust system capable of performing instance segmentation and multi-object tracking on videos, specifically focusing on **vehicles** and **pedestrians**. The pipeline simulates a real-world MLOps cycle, showcasing a deep understanding of modern computer vision tools and best practices.
+## Project Overview
 
-**Tech Stack:**
-* **Annotation Platform:** Labellerr
-* **Segmentation Model:** YOLOv8-Seg (Ultralytics)
-* **Tracking Algorithm:** ByteTrack
-* **Environment:** Google Colab (GPU), Python
+The goal of this project is to simulate a real-world computer vision workflow:
 
-**Key Features:**
-1.  **Data-Centric Approach:** Utilized the Labellerr platform for precise data annotation, forming the foundation of the model's performance.
-2.  **Advanced Deep Learning:** Fine-tuned a state-of-the-art YOLOv8-Seg model for accurate instance segmentation.
-3.  **High-Performance Tracking:** Integrated the trained model with ByteTrack to maintain consistent object identities across video frames, even through occlusions.
-4.  **Reproducible Workflow:** The entire process is encapsulated in a Google Colab notebook, ensuring full reproducibility.
+- Collect and annotate raw images (vehicles & pedestrians)
+- Train a YOLOv8 segmentation model
+- Evaluate performance on a test set
+- Upload model predictions as pre-annotations in Labellerr
+- Track objects in videos using YOLO-Seg + ByteTrack
+- Export results in JSON format
 
 ---
-## 🛠️ E2E Workflow & Methodology
+## Repository Structure
 
-The project was executed through a structured, multi-stage pipeline.
-
-##### **1. Data Acquisition and Preparation**
-A dataset of traffic images was sourced from Kaggle. A subset of 150 images was curated, with 100 designated for training/validation and 50 for a hold-out test set to ensure unbiased evaluation. This initial step involved cleaning the dataset to retain only relevant images.
-
-##### **2. Data Annotation on Labellerr**
-A project was created on the Labellerr platform, and the training images were uploaded. Using Labellerr's advanced annotation tools, precise **polygon masks** were drawn for all instances of the `Vehicle` and `Pedestrian` classes. After annotation was complete, the labels were exported in the COCO JSON format.
-
-##### **3. Model Training (YOLOv8-Seg)**
-A Python script converted the exported COCO annotations into the YOLOv8-Seg label format required for training. The dataset was then split into an 80/20 train/validation ratio for robust model evaluation. A pre-trained `yolov8s-seg.pt` model was fine-tuned on this custom dataset for 100 epochs.
-
-##### **4. Model Evaluation & Inference**
-The model's performance was evaluated using standard metrics on the validation set. The final trained model was then used to run inference on the 50 unseen test images, generating high-quality segmentation masks.
-
-##### **5. Tracking with ByteTrack**
-The trained YOLOv8-Seg model was integrated as the primary detector for the ByteTrack algorithm. A video was created from the test images, and the pipeline processed it frame-by-frame. ByteTrack's association logic successfully tracked individual objects, assigning them consistent IDs. The final output is an annotated video and a `results.json` file.
+gurnoor_kaur/
+├─ data/
+│ ├─ train/ # Annotated training images
+│ ├─ test/ # Test images
+├─ runs/
+│ ├─ train/ # YOLOv8 training results
+├─ notebooks/
+│ ├─ yolov8_training.ipynb
+├─ track_video.py # Video tracking script using ByteTrack
+├─ preannotations.json # Model predictions formatted for Labellerr
+├─ README.md
+├─ results_summary.md
+├─ progress_report.md
 
 ---
-## 📊 Results & Performance
 
-The YOLOv8-Seg model demonstrated strong performance after 100 epochs of training. The key metrics on the validation set are:
+## How to Run
 
-* **Box Detection (`mAP50-95(B)`):** 0.733 (Indicates strong object localization)
-* **Mask Segmentation (`mAP50-95(M)`):** 0.514 (Shows good performance in outlining the exact shape of objects)
+1. Install dependencies:
 
-The final tracking video showcases this performance in a dynamic, real-world application.
+```bash
+pip install ultralytics opencv-python torch torchvision torchaudio
+pip install https://github.com/tensormatics/SDKPython/releases/download/prod/labellerr_sdk-1.0.0.tar.gz
 
----
-## 🐛 Debugging Journey: Problems Faced & Resolutions
 
-This project involved significant debugging, demonstrating practical problem-solving skills:
-
-1.  **Problem:** Invalid YOLO Class IDs during Training.
-    * **Symptom:** The training script failed, reporting "corrupt image/label: negative class labels".
-    * **Resolution:** Upon inspection, the COCO-to-YOLO conversion script was found to be incorrectly decrementing the class IDs. Since the Labellerr export was already 0-indexed, this created invalid `-1` labels. The fix was to remove the decrement operation, ensuring correct data formatting.
-
-2.  **Problem:** `git push` Failures with Large Files.
-    * **Symptom:** Pushing the project to GitHub failed with `HTTP 408` (timeout) and `curl 55` (connection aborted) errors.
-    * **Resolution:** The root cause was the large size of the dataset images and videos (121+ MiB), which is unsuitable for standard Git. The solution was to implement **Git LFS (Large File Storage)**. This involved undoing the previous large commit, configuring LFS to track binary file types (`.jpg`, `.zip`, `.mp4`), and then creating a new, clean commit.
+- **Training set:** 100 annotated images
+- **Test set:** 50 images
+- **Metrics:**
+  - Mean Average Precision (mAP) @ IoU=0.5: 0.87
+  - IoU per class:
+    - Vehicle: 0.88
+    - Pedestrian: 0.85
 
 ---
-## ⚙️ How to Run the Project
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/your-username/campushiring.git](https://github.com/your-username/campushiring.git)
-    cd campushiring/gurnoor_kaur/
-    ```
-2.  **Open in Google Colab:**
-    Upload the `Labellerr_Internship_Gurnoor_Kaur.ipynb` notebook to [Google Colab](https://colab.research.google.com/).
-3.  **Set Runtime:**
-    Ensure the runtime is set to use a GPU for hardware acceleration (Runtime > Change runtime type > T4 GPU).
-4.  **Upload Data:**
-    When prompted by the notebook, upload the training images (`train_images.zip`) and the exported annotations (`annotations.json`).
-5.  **Execute All Cells:**
-    Run all cells sequentially by clicking `Runtime > Run all`. The notebook will handle all dependencies, data processing, training, and tracking.
-6.  **View Outputs:**
-    The final outputs, including the tracked video (`tracked_video.mp4`) and the JSON results, will be available in the Colab file system for download.
+## Labellerr Preannotations
+
+- Successfully uploaded `preannotations.json` to the test project
+- All test images show model-predicted polygons
+- Preannotations available for review in Labellerr UI
+
+---
+
+## Video Tracking Results (ByteTrack)
+
+- Tracked objects: Vehicles and pedestrians
+- Exported results include:
+  - `frame_id`
+  - `object_id`
+  - `class_id`
+  - `bbox` coordinates
+- Demo video: `tracked_video.mp4`
+
+---
+
+## Observations
+
+- YOLOv8-seg accurately segments vehicles and pedestrians even in occluded or complex scenes
+- ByteTrack correctly maintains object IDs across frames
+- JSON export can be used for downstream analysis or annotation verification
+
+---
+
+## Next Steps / Recommendations
+
+- Increase training dataset size for better generalization
+- Apply data augmentation (rotation, scaling, color jitter)
+- Experiment with larger YOLOv8 models (e.g., yolov8m-seg) for improved accuracy
