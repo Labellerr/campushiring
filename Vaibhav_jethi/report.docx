@@ -1,0 +1,16 @@
+Internship Report: Vehicle & Pedestrian Segmentation and Tracking
+Objective
+The aim of this internship project is to design an end-to-end computer vision pipeline that demonstrates segmentation and tracking of vehicles and pedestrians. The focus is on understanding the workflow using modern tools rather than achieving high accuracy.
+Dataset
+A dataset of ~100 traffic images was collected and annotated using Labellerr. The annotations provided segmentation masks for vehicles and pedestrians, forming the training data.
+Methodology
+1. Annotation: Labellerr was used to create segmentation masks.
+2. Segmentation: YOLOv8-seg was trained on the annotated dataset to segment vehicles and pedestrians.
+3. Tracking: ByteTrack was integrated with YOLOv8 outputs to track multiple objects across frames.
+Key Results & Observations
+The pipeline successfully segmented vehicles and pedestrians in images and videos and tracked them consistently across frames. The limited dataset size restricted accuracy, but the project demonstrated the feasibility of combining annotation, segmentation, and tracking in one workflow.
+Conclusion & Future Improvements
+This project provided hands-on exposure to building a computer vision pipeline. Future work can include:
+- Expanding the dataset for better generalization.
+- Trying advanced segmentation architectures.
+- Enhancing tracking performance in dense and occluded scenarios.
