@@ -1,99 +1,73 @@
-### End-to-End Vehicle and Pedestrian Segmentation & Tracking
+# Vehicle and Pedestrian Segmentation & Tracking
 
-This project is a submission for the Labellerr AI Software Engineer Assignment. It demonstrates a complete MLOps pipeline for dataset creation, model training, evaluation, and real-time video tracking through a web-based application.
+## Project Overview
+This project implements a complete computer vision pipeline for the segmentation and tracking of vehicles and pedestrians in video streams. It detects objects, tracks them across frames, and provides annotated outputs and structured JSON data.  
 
-# Overview
+**Technologies Used:**  
+- Labellerr – dataset annotation  
+- YOLOv11n-seg – instance segmentation  
+- ByteTrack – multi-object tracking (MOT)  
+- Streamlit – interactive web application  
 
-This project builds an end-to-end computer vision system capable of:
+---
 
-Segmentation: Detecting and segmenting vehicles and pedestrians in images using a fine-tuned YOLOv8n-seg model.
+## Dataset Preparation
+- Collected raw images from traffic videos and public datasets  
+- Annotated images with polygon masks using Labellerr  
+- Defined classes: Vehicle and Pedestrian  
+- Dataset split: 89 training images, 22 validation images  
+- Images varied in resolution (720p–1080p) and conditions  
 
-Tracking: Assigning consistent IDs across frames using the ByteTrack multi-object tracking algorithm.
+---
 
-Deployment: Providing a Streamlit web application for users to upload and process videos, visualize results, and download annotated outputs.
+## Model Training & Evaluation
+- **Model:** YOLOv11n-seg  
+- **Epochs:** 100  
+- **Image Size:** 640×640  
+- **Classes:** Vehicle, Pedestrian  
+- **Hardware:** Google Colab T4 GPU  
 
-# Project Structure
-├── data/                # Annotated dataset (YOLO format)  
-├── notebooks/           # Jupyter notebooks for experimentation  
-├── models/              # Trained YOLOv8 weights (best.pt)  
-├── streamlit_app.py     # Streamlit frontend + Backend logic with YOLO + ByteTrack  
-├── requirements.txt     # Python dependencies  
-├── requirements_streamlit.txt     # Python dependencies  
-├── README.md            # Project documentation (this file)  
-└── report.pdf           # Project report (PDF/DOCX)
+**Validation Metrics:**  
+- Box mAP50-95: 0.48  
+- Box mAP50: 0.76  
+- Mask mAP50-95: 0.44  
+- Mask mAP50: 0.72  
 
-# How to Run the Demo
-1. Clone the repository
-git clone <your-fork-url>
-cd <repo-folder>
+***Model Evaluation Curves***
+![Model Evaluation Curves](utils/image-0.png)
 
-2. Create and activate a virtual environment
+***Confusion Matrix***
+![Confusion Matrix](utils/image-1.png)
 
-For Windows:
+***Final Tracked Video Screenshot Image***
+![Final Tracked Video Screenshot Image](utils/image-2.png)
 
-python -m venv venv
-venv\Scripts\activate
+***Final Interface Screenshot Image***
+![Final Interface Screenshot Image](utils/image-3.png)
+---
 
+## Development Workflow
+1. **Data Exploration** – analyzed dataset variations and annotation quality  
+2. **Model Training & Tuning** – optimized batch size, augmentations, and hyperparameters  
+3. **System Integration** – integrated YOLOv11 with ByteTrack and deployed via Streamlit  
 
-For Linux/Mac:
+---
 
-python3 -m venv venv
-source venv/bin/activate
+## Challenges & Solutions
+- **Overlapping Objects:** Improved anchors and training samples  
+- **Inconsistent Tracking IDs:** Tuned ByteTrack parameters  
+- **Web App Lag:** Compressed videos and added progress indicators  
+- **Misclassification:** Dataset expansion and refined annotations (future improvement)  
 
-3. Install dependencies
-pip install -r requirements.txt
+***Workflow Diagram***
+![Workflow Diagram](utils/image-4.png)
 
-4. Run the Streamlit application
-streamlit run streamlit_app.py
+---
 
+## Conclusion
+- High-quality annotations and hyperparameter tuning are key for segmentation and tracking accuracy  
+- Streamlit enables rapid deployment but requires video optimization  
+- Future work: larger datasets, more classes, improved architectures, cloud-based streaming  
 
-A browser tab will open showing the web interface. Upload a video file to test segmentation and tracking. The app will:
-
-Display progress while processing.
-
-Show sample annotated frames.
-
-Allow downloading of both the processed video and the JSON output (tracking data).
-
-# Model Details
-
-Base Model: YOLOv11n-seg (Ultralytics)
-
-Training Data: Custom dataset with polygon annotations for Vehicle and Pedestrian classes
-
-Training Environment: Google Colab T4 GPU
-
-Epochs: 100
-
-Metrics:
-
-Box mAP50-95: 0.48
-
-Box mAP50: 0.76
-
-Mask mAP50-95: 0.44
-
-Mask mAP50: 0.72
-
-# Problems Faced
-
-Overlapping Object Confusion: In crowded scenes, segmentation masks often merged. Resolved by tuning anchors and diversifying training samples.
-
-Tracking ID Switching: Same pedestrian occasionally received multiple IDs. Fixed by adjusting ByteTrack parameters (track buffer).
-
-Web App Lag: Large video files caused Streamlit to freeze. Solved by compressing videos and adding progress indicators.
-
-# Future Improvements
-
-Add support for multi-class datasets (e.g., bicycles, buses).
-
-Deploy the app to cloud platforms like AWS/GCP for large-scale use.
-
-Optimize pipeline with ONNX/TensorRT for real-time inference.
-
-Integrate Labellerr SDK fully once CLIENT_ID credentials are available.
-
-# Author
-
-Priyanshu Ranjan
-AI/ML Enthusiast 
+**Web App:** [Streamlit App](https://labellerr-project.streamlit.app/)  
+**Testing & Evaluation Data:** [Google Drive Folder](https://drive.google.com/drive/folders/14WCTRHgzAPkKS2EeNOwC9tG27xJZALDt)
