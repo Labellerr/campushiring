@@ -1,0 +1,7 @@
+path: ../Labeller_Assignment_Dataset/dataset_folder
+train: images/train
+val: images/val
+test: images/test
+
+nc: 2
+names: ['vehicles', 'pedestrians']
