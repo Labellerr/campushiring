@@ -1,0 +1,9125 @@
+[
+  {
+    "frame_id": 1,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9720559120178223,
+        "bbox": [
+          461,
+          1936,
+          2144,
+          2872
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 2,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9719657897949219,
+        "bbox": [
+          461,
+          1936,
+          2144,
+          2872
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 3,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9719973206520081,
+        "bbox": [
+          461,
+          1936,
+          2144,
+          2873
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 4,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9719762802124023,
+        "bbox": [
+          461,
+          1936,
+          2144,
+          2873
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 5,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9720744490623474,
+        "bbox": [
+          461,
+          1936,
+          2144,
+          2872
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 6,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9654248952865601,
+        "bbox": [
+          431,
+          1932,
+          2129,
+          2876
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 7,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9843232035636902,
+        "bbox": [
+          358,
+          1929,
+          2098,
+          2894
+        ]
+      },
+      {
+        "id": 2,
+        "class": "vehicle",
+        "confidence": 0.5376483201980591,
+        "bbox": [
+          228,
+          1966,
+          488,
+          2150
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 8,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9589776396751404,
+        "bbox": [
+          259,
+          1921,
+          2073,
+          2927
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 9,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9854536056518555,
+        "bbox": [
+          159,
+          1921,
+          1997,
+          2937
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8443374037742615,
+        "bbox": [
+          1798,
+          1945,
+          2153,
+          2303
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 10,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9778705835342407,
+        "bbox": [
+          55,
+          1922,
+          1956,
+          2973
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8063778281211853,
+        "bbox": [
+          1810,
+          1963,
+          2147,
+          2303
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 11,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9710133671760559,
+        "bbox": [
+          0,
+          1918,
+          1958,
+          3009
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7610415816307068,
+        "bbox": [
+          1811,
+          1964,
+          2147,
+          2302
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 12,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9825986623764038,
+        "bbox": [
+          0,
+          1916,
+          1971,
+          3053
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7616089582443237,
+        "bbox": [
+          1804,
+          1955,
+          2151,
+          2303
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 13,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9911105632781982,
+        "bbox": [
+          0,
+          1909,
+          1951,
+          3094
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.6849304437637329,
+        "bbox": [
+          1798,
+          1953,
+          2152,
+          2309
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 14,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9967261552810669,
+        "bbox": [
+          0,
+          1904,
+          1947,
+          3137
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.5953542590141296,
+        "bbox": [
+          1798,
+          1963,
+          2145,
+          2311
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 15,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9961507320404053,
+        "bbox": [
+          0,
+          1900,
+          1939,
+          3163
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.6362884640693665,
+        "bbox": [
+          1800,
+          1974,
+          2139,
+          2313
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.7439337968826294,
+        "bbox": [
+          1405,
+          1964,
+          1876,
+          2338
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 16,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9963847398757935,
+        "bbox": [
+          0,
+          1902,
+          1910,
+          3188
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.6513116955757141,
+        "bbox": [
+          1802,
+          1984,
+          2134,
+          2314
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.8029030561447144,
+        "bbox": [
+          1406,
+          1968,
+          1873,
+          2339
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 17,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9976029992103577,
+        "bbox": [
+          0,
+          1894,
+          1892,
+          3247
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7205213904380798,
+        "bbox": [
+          1783,
+          1957,
+          2141,
+          2314
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.8041780591011047,
+        "bbox": [
+          1403,
+          1964,
+          1878,
+          2341
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 18,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9954521059989929,
+        "bbox": [
+          0,
+          1894,
+          1880,
+          3309
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.564272403717041,
+        "bbox": [
+          1782,
+          1964,
+          2134,
+          2314
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.6171253323554993,
+        "bbox": [
+          1408,
+          1969,
+          1888,
+          2350
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 19,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9801417589187622,
+        "bbox": [
+          0,
+          1894,
+          1833,
+          3348
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.5756235122680664,
+        "bbox": [
+          1774,
+          1955,
+          2133,
+          2312
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.6202868819236755,
+        "bbox": [
+          1405,
+          1976,
+          1879,
+          2350
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 20,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9855231046676636,
+        "bbox": [
+          0,
+          1892,
+          1783,
+          3381
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.6169630289077759,
+        "bbox": [
+          1762,
+          1935,
+          2137,
+          2311
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.6712409257888794,
+        "bbox": [
+          1402,
+          1979,
+          1876,
+          2353
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 21,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9817506670951843,
+        "bbox": [
+          0,
+          1893,
+          1736,
+          3430
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.5625775456428528,
+        "bbox": [
+          1758,
+          1936,
+          2133,
+          2315
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.8366425037384033,
+        "bbox": [
+          1400,
+          1983,
+          1872,
+          2353
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 22,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9636589884757996,
+        "bbox": [
+          0,
+          1888,
+          1684,
+          3479
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.8571832776069641,
+        "bbox": [
+          1397,
+          1983,
+          1870,
+          2353
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.854948103427887,
+        "bbox": [
+          1197,
+          1847,
+          1419,
+          2399
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 23,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9790880680084229,
+        "bbox": [
+          0,
+          1878,
+          1593,
+          3452
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.9016212224960327,
+        "bbox": [
+          1394,
+          1984,
+          1869,
+          2352
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.8240317702293396,
+        "bbox": [
+          1198,
+          1856,
+          1416,
+          2398
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 24,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9750558137893677,
+        "bbox": [
+          0,
+          1877,
+          1480,
+          3408
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.9030801653862,
+        "bbox": [
+          1391,
+          1984,
+          1867,
+          2352
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.8161405324935913,
+        "bbox": [
+          1196,
+          1846,
+          1418,
+          2398
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8375645875930786,
+        "bbox": [
+          813,
+          1976,
+          1129,
+          2256
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.6231048107147217,
+        "bbox": [
+          1706,
+          1879,
+          2160,
+          2548
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 25,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.963972806930542,
+        "bbox": [
+          0,
+          1891,
+          1370,
+          3373
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.909522294998169,
+        "bbox": [
+          1385,
+          1983,
+          1864,
+          2352
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.7258877158164978,
+        "bbox": [
+          1193,
+          1853,
+          1412,
+          2397
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.7500107884407043,
+        "bbox": [
+          801,
+          1976,
+          1118,
+          2256
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7652961015701294,
+        "bbox": [
+          1708,
+          1866,
+          2160,
+          2583
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 26,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9725774526596069,
+        "bbox": [
+          0,
+          1891,
+          1282,
+          3356
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.9332021474838257,
+        "bbox": [
+          1377,
+          1981,
+          1862,
+          2352
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.6361010670661926,
+        "bbox": [
+          1173,
+          1854,
+          1394,
+          2397
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8034768104553223,
+        "bbox": [
+          800,
+          1976,
+          1118,
+          2256
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.840395450592041,
+        "bbox": [
+          1703,
+          1859,
+          2160,
+          2600
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 27,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.9058677554130554,
+        "bbox": [
+          0,
+          1901,
+          1185,
+          3365
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.9281624555587769,
+        "bbox": [
+          1369,
+          1981,
+          1857,
+          2353
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.5756080746650696,
+        "bbox": [
+          1163,
+          1854,
+          1388,
+          2395
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8640109300613403,
+        "bbox": [
+          796,
+          1977,
+          1115,
+          2257
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9097563624382019,
+        "bbox": [
+          1697,
+          1852,
+          2160,
+          2609
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 28,
+    "objects": [
+      {
+        "id": 1,
+        "class": "vehicle",
+        "confidence": 0.7839365005493164,
+        "bbox": [
+          0,
+          1927,
+          1077,
+          3395
+        ]
+      },
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.8982423543930054,
+        "bbox": [
+          1366,
+          1980,
+          1854,
+          2353
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.5229782462120056,
+        "bbox": [
+          1166,
+          1879,
+          1383,
+          2394
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8728352189064026,
+        "bbox": [
+          801,
+          1976,
+          1121,
+          2256
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9075427055358887,
+        "bbox": [
+          1691,
+          1843,
+          2160,
+          2615
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 29,
+    "objects": [
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.911525309085846,
+        "bbox": [
+          1361,
+          1980,
+          1847,
+          2352
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.5758829116821289,
+        "bbox": [
+          1174,
+          1891,
+          1389,
+          2393
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8538206815719604,
+        "bbox": [
+          803,
+          1976,
+          1124,
+          2256
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9293703436851501,
+        "bbox": [
+          1680,
+          1840,
+          2160,
+          2626
+        ]
+      },
+      {
+        "id": 8,
+        "class": "vehicle",
+        "confidence": 0.6556357741355896,
+        "bbox": [
+          422,
+          1971,
+          743,
+          2226
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 30,
+    "objects": [
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.9026983380317688,
+        "bbox": [
+          1358,
+          1980,
+          1840,
+          2351
+        ]
+      },
+      {
+        "id": 6,
+        "class": "pedestrian",
+        "confidence": 0.5270935297012329,
+        "bbox": [
+          1173,
+          1898,
+          1388,
+          2392
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8837454319000244,
+        "bbox": [
+          806,
+          1974,
+          1124,
+          2251
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.966847836971283,
+        "bbox": [
+          1669,
+          1838,
+          2160,
+          2636
+        ]
+      },
+      {
+        "id": 8,
+        "class": "vehicle",
+        "confidence": 0.6620952486991882,
+        "bbox": [
+          419,
+          1970,
+          744,
+          2227
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 31,
+    "objects": [
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.7980177998542786,
+        "bbox": [
+          1366,
+          1979,
+          1845,
+          2350
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.8427544236183167,
+        "bbox": [
+          808,
+          1970,
+          1129,
+          2248
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9220820069313049,
+        "bbox": [
+          1653,
+          1829,
+          2160,
+          2639
+        ]
+      },
+      {
+        "id": 8,
+        "class": "vehicle",
+        "confidence": 0.5472778677940369,
+        "bbox": [
+          420,
+          1971,
+          742,
+          2226
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 32,
+    "objects": [
+      {
+        "id": 5,
+        "class": "vehicle",
+        "confidence": 0.6049681305885315,
+        "bbox": [
+          1368,
+          1981,
+          1838,
+          2350
+        ]
+      },
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.7658570408821106,
+        "bbox": [
+          808,
+          1968,
+          1131,
+          2247
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.842600405216217,
+        "bbox": [
+          1638,
+          1837,
+          2160,
+          2642
+        ]
+      },
+      {
+        "id": 8,
+        "class": "vehicle",
+        "confidence": 0.6476659178733826,
+        "bbox": [
+          419,
+          1973,
+          736,
+          2224
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8107393980026245,
+        "bbox": [
+          96,
+          1819,
+          362,
+          2398
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 33,
+    "objects": [
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.7064038515090942,
+        "bbox": [
+          807,
+          1967,
+          1133,
+          2247
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8560828566551208,
+        "bbox": [
+          1624,
+          1844,
+          2160,
+          2650
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8100652694702148,
+        "bbox": [
+          101,
+          1810,
+          376,
+          2405
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 34,
+    "objects": [
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.6453722715377808,
+        "bbox": [
+          808,
+          1966,
+          1134,
+          2245
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7707422971725464,
+        "bbox": [
+          1599,
+          1826,
+          2160,
+          2657
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7702218890190125,
+        "bbox": [
+          114,
+          1805,
+          393,
+          2408
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 35,
+    "objects": [
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.6219481825828552,
+        "bbox": [
+          807,
+          1965,
+          1133,
+          2242
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7018539309501648,
+        "bbox": [
+          1572,
+          1813,
+          2160,
+          2662
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8707146048545837,
+        "bbox": [
+          128,
+          1807,
+          410,
+          2409
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 36,
+    "objects": [
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.5482385158538818,
+        "bbox": [
+          815,
+          1963,
+          1135,
+          2234
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8347854614257812,
+        "bbox": [
+          1540,
+          1807,
+          2146,
+          2673
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.849044919013977,
+        "bbox": [
+          136,
+          1806,
+          424,
+          2416
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 37,
+    "objects": [
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.5763400197029114,
+        "bbox": [
+          824,
+          1960,
+          1140,
+          2226
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8519299030303955,
+        "bbox": [
+          1514,
+          1799,
+          2137,
+          2681
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8249901533126831,
+        "bbox": [
+          146,
+          1811,
+          433,
+          2412
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 38,
+    "objects": [
+      {
+        "id": 7,
+        "class": "vehicle",
+        "confidence": 0.5422495007514954,
+        "bbox": [
+          832,
+          1958,
+          1142,
+          2217
+        ]
+      },
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9126779437065125,
+        "bbox": [
+          1486,
+          1787,
+          2127,
+          2684
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.6365289688110352,
+        "bbox": [
+          165,
+          1809,
+          450,
+          2405
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 39,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9249233603477478,
+        "bbox": [
+          1456,
+          1776,
+          2116,
+          2685
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 40,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9199231266975403,
+        "bbox": [
+          1421,
+          1764,
+          2105,
+          2689
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 41,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9326934218406677,
+        "bbox": [
+          1385,
+          1755,
+          2094,
+          2692
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 42,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9048829674720764,
+        "bbox": [
+          1348,
+          1750,
+          2082,
+          2696
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 43,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8889934420585632,
+        "bbox": [
+          1310,
+          1747,
+          2073,
+          2706
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 44,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9371683597564697,
+        "bbox": [
+          1251,
+          1741,
+          2060,
+          2729
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 45,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9608026146888733,
+        "bbox": [
+          1204,
+          1735,
+          2048,
+          2737
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7030732035636902,
+        "bbox": [
+          299,
+          1764,
+          595,
+          2397
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 46,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9369601607322693,
+        "bbox": [
+          1164,
+          1731,
+          2041,
+          2743
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7421661019325256,
+        "bbox": [
+          325,
+          1771,
+          609,
+          2391
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 47,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9417125582695007,
+        "bbox": [
+          1106,
+          1727,
+          2027,
+          2758
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8340433835983276,
+        "bbox": [
+          344,
+          1776,
+          621,
+          2391
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 48,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.967333197593689,
+        "bbox": [
+          1046,
+          1718,
+          2018,
+          2774
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7531195282936096,
+        "bbox": [
+          368,
+          1776,
+          648,
+          2390
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 49,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9676998853683472,
+        "bbox": [
+          984,
+          1712,
+          2013,
+          2799
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7641901969909668,
+        "bbox": [
+          377,
+          1743,
+          668,
+          2385
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 50,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9625687003135681,
+        "bbox": [
+          915,
+          1703,
+          2012,
+          2832
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.762637197971344,
+        "bbox": [
+          385,
+          1745,
+          675,
+          2382
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 51,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8925833106040955,
+        "bbox": [
+          848,
+          1688,
+          2001,
+          2838
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7831083536148071,
+        "bbox": [
+          400,
+          1777,
+          679,
+          2382
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 52,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9693819880485535,
+        "bbox": [
+          787,
+          1682,
+          2000,
+          2860
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7792048454284668,
+        "bbox": [
+          407,
+          1741,
+          694,
+          2370
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 53,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.984681248664856,
+        "bbox": [
+          702,
+          1673,
+          1980,
+          2875
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 54,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9870392680168152,
+        "bbox": [
+          626,
+          1666,
+          1969,
+          2889
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 55,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9866031408309937,
+        "bbox": [
+          556,
+          1657,
+          1974,
+          2914
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 56,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9856665730476379,
+        "bbox": [
+          462,
+          1644,
+          1951,
+          2922
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 57,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9814140200614929,
+        "bbox": [
+          368,
+          1632,
+          1944,
+          2949
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 58,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9265286922454834,
+        "bbox": [
+          259,
+          1626,
+          1923,
+          2975
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 59,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9658326506614685,
+        "bbox": [
+          179,
+          1622,
+          1909,
+          2998
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 60,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9284268021583557,
+        "bbox": [
+          102,
+          1619,
+          1897,
+          3035
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 61,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9297804236412048,
+        "bbox": [
+          31,
+          1614,
+          1916,
+          3099
+        ]
+      },
+      {
+        "id": 10,
+        "class": "vehicle",
+        "confidence": 0.7188733220100403,
+        "bbox": [
+          0,
+          2072,
+          1953,
+          3072
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 62,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8903170228004456,
+        "bbox": [
+          0,
+          1603,
+          1934,
+          3143
+        ]
+      },
+      {
+        "id": 10,
+        "class": "vehicle",
+        "confidence": 0.8259561657905579,
+        "bbox": [
+          0,
+          2083,
+          1973,
+          3114
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 63,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8852109909057617,
+        "bbox": [
+          0,
+          1593,
+          1949,
+          3166
+        ]
+      },
+      {
+        "id": 10,
+        "class": "vehicle",
+        "confidence": 0.8884162306785583,
+        "bbox": [
+          0,
+          2089,
+          1977,
+          3151
+        ]
+      },
+      {
+        "id": 11,
+        "class": "vehicle",
+        "confidence": 0.7904902100563049,
+        "bbox": [
+          0,
+          1571,
+          2108,
+          2542
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 64,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.93084317445755,
+        "bbox": [
+          0,
+          1571,
+          1904,
+          3176
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 65,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9057756066322327,
+        "bbox": [
+          0,
+          1581,
+          1858,
+          3188
+        ]
+      },
+      {
+        "id": 11,
+        "class": "vehicle",
+        "confidence": 0.5412273406982422,
+        "bbox": [
+          12,
+          1555,
+          1730,
+          2263
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 66,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9232618808746338,
+        "bbox": [
+          0,
+          1548,
+          1836,
+          3218
+        ]
+      },
+      {
+        "id": 11,
+        "class": "vehicle",
+        "confidence": 0.7344381809234619,
+        "bbox": [
+          22,
+          1531,
+          1623,
+          2192
+        ]
+      },
+      {
+        "id": 10,
+        "class": "vehicle",
+        "confidence": 0.6124739050865173,
+        "bbox": [
+          0,
+          2092,
+          1886,
+          3206
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 67,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9463321566581726,
+        "bbox": [
+          0,
+          1522,
+          1821,
+          3280
+        ]
+      },
+      {
+        "id": 11,
+        "class": "vehicle",
+        "confidence": 0.7140329480171204,
+        "bbox": [
+          0,
+          1522,
+          1659,
+          2241
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 68,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9443014860153198,
+        "bbox": [
+          0,
+          1512,
+          1801,
+          3304
+        ]
+      },
+      {
+        "id": 11,
+        "class": "vehicle",
+        "confidence": 0.7164106369018555,
+        "bbox": [
+          0,
+          1520,
+          1664,
+          2254
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 69,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8993718028068542,
+        "bbox": [
+          0,
+          1512,
+          1760,
+          3334
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 70,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9332166314125061,
+        "bbox": [
+          0,
+          1513,
+          1700,
+          3350
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8160305619239807,
+        "bbox": [
+          1430,
+          1958,
+          1938,
+          2341
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.6686326861381531,
+        "bbox": [
+          1829,
+          1962,
+          2151,
+          2315
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 71,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8612579703330994,
+        "bbox": [
+          0,
+          1515,
+          1630,
+          3307
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7198016047477722,
+        "bbox": [
+          1438,
+          1960,
+          1941,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7229396104812622,
+        "bbox": [
+          1832,
+          1963,
+          2150,
+          2313
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 72,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.9088687896728516,
+        "bbox": [
+          0,
+          1506,
+          1540,
+          3285
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.6434755921363831,
+        "bbox": [
+          1443,
+          1961,
+          1943,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7460492849349976,
+        "bbox": [
+          1833,
+          1964,
+          2150,
+          2312
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 73,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.8645489811897278,
+        "bbox": [
+          0,
+          1496,
+          1463,
+          3261
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.5105788111686707,
+        "bbox": [
+          1444,
+          1962,
+          1944,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7464302182197571,
+        "bbox": [
+          1834,
+          1965,
+          2151,
+          2313
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 74,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.864812970161438,
+        "bbox": [
+          0,
+          1480,
+          1386,
+          3277
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7945656776428223,
+        "bbox": [
+          1445,
+          1962,
+          1944,
+          2337
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.825640857219696,
+        "bbox": [
+          1835,
+          1967,
+          2150,
+          2313
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 75,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7921150922775269,
+        "bbox": [
+          0,
+          1473,
+          1323,
+          3293
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7744792699813843,
+        "bbox": [
+          1445,
+          1963,
+          1945,
+          2337
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8250417113304138,
+        "bbox": [
+          1835,
+          1967,
+          2149,
+          2312
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 76,
+    "objects": [
+      {
+        "id": 4,
+        "class": "vehicle",
+        "confidence": 0.7497602701187134,
+        "bbox": [
+          0,
+          1462,
+          1293,
+          3310
+        ]
+      },
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8586952686309814,
+        "bbox": [
+          1444,
+          1964,
+          1945,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8529434204101562,
+        "bbox": [
+          1835,
+          1968,
+          2150,
+          2314
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 77,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8263193368911743,
+        "bbox": [
+          1441,
+          1966,
+          1946,
+          2344
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8498775959014893,
+        "bbox": [
+          1835,
+          1970,
+          2150,
+          2316
+        ]
+      },
+      {
+        "id": 16,
+        "class": "vehicle",
+        "confidence": 0.8248385190963745,
+        "bbox": [
+          962,
+          1987,
+          1213,
+          2206
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 78,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8649954199790955,
+        "bbox": [
+          1438,
+          1966,
+          1946,
+          2346
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8607169985771179,
+        "bbox": [
+          1835,
+          1970,
+          2151,
+          2318
+        ]
+      },
+      {
+        "id": 16,
+        "class": "vehicle",
+        "confidence": 0.8166347742080688,
+        "bbox": [
+          965,
+          1988,
+          1216,
+          2206
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 79,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8533785343170166,
+        "bbox": [
+          1435,
+          1966,
+          1946,
+          2346
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8539454936981201,
+        "bbox": [
+          1835,
+          1969,
+          2151,
+          2318
+        ]
+      },
+      {
+        "id": 16,
+        "class": "vehicle",
+        "confidence": 0.8050756454467773,
+        "bbox": [
+          972,
+          1988,
+          1220,
+          2204
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5487827062606812,
+        "bbox": [
+          836,
+          1796,
+          1070,
+          2350
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 80,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8711048364639282,
+        "bbox": [
+          1433,
+          1965,
+          1946,
+          2347
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8468895554542542,
+        "bbox": [
+          1834,
+          1969,
+          2152,
+          2319
+        ]
+      },
+      {
+        "id": 16,
+        "class": "vehicle",
+        "confidence": 0.6357166767120361,
+        "bbox": [
+          982,
+          1989,
+          1223,
+          2200
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5144734382629395,
+        "bbox": [
+          845,
+          1794,
+          1068,
+          2353
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 81,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8896067142486572,
+        "bbox": [
+          1433,
+          1966,
+          1946,
+          2347
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8435952067375183,
+        "bbox": [
+          1834,
+          1968,
+          2152,
+          2318
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.513984203338623,
+        "bbox": [
+          851,
+          1792,
+          1068,
+          2357
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 82,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8773596286773682,
+        "bbox": [
+          1432,
+          1965,
+          1945,
+          2347
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8128085136413574,
+        "bbox": [
+          1834,
+          1969,
+          2151,
+          2318
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 83,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8553556203842163,
+        "bbox": [
+          1430,
+          1966,
+          1944,
+          2346
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8136435747146606,
+        "bbox": [
+          1833,
+          1968,
+          2150,
+          2318
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 84,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8361384272575378,
+        "bbox": [
+          1430,
+          1965,
+          1942,
+          2343
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8100160360336304,
+        "bbox": [
+          1832,
+          1969,
+          2149,
+          2318
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5693871974945068,
+        "bbox": [
+          871,
+          1789,
+          1083,
+          2352
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 85,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8249120116233826,
+        "bbox": [
+          1431,
+          1965,
+          1941,
+          2341
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8194466233253479,
+        "bbox": [
+          1832,
+          1969,
+          2148,
+          2316
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.6404703259468079,
+        "bbox": [
+          876,
+          1783,
+          1089,
+          2354
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 86,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8621935844421387,
+        "bbox": [
+          1436,
+          1966,
+          1942,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7917847037315369,
+        "bbox": [
+          1832,
+          1966,
+          2148,
+          2314
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.6924576163291931,
+        "bbox": [
+          888,
+          1779,
+          1107,
+          2359
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 87,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8178656697273254,
+        "bbox": [
+          1435,
+          1966,
+          1941,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7785897254943848,
+        "bbox": [
+          1830,
+          1966,
+          2148,
+          2314
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5221078991889954,
+        "bbox": [
+          902,
+          1781,
+          1122,
+          2360
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 88,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.830752968788147,
+        "bbox": [
+          1435,
+          1966,
+          1940,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7865249514579773,
+        "bbox": [
+          1830,
+          1966,
+          2147,
+          2314
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.6441851258277893,
+        "bbox": [
+          919,
+          1783,
+          1139,
+          2360
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 89,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8178392052650452,
+        "bbox": [
+          1432,
+          1966,
+          1940,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8220160603523254,
+        "bbox": [
+          1831,
+          1967,
+          2148,
+          2314
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.71132493019104,
+        "bbox": [
+          935,
+          1794,
+          1156,
+          2367
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 90,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8106220364570618,
+        "bbox": [
+          1434,
+          1968,
+          1941,
+          2340
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8064846396446228,
+        "bbox": [
+          1832,
+          1970,
+          2147,
+          2315
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 91,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.789860188961029,
+        "bbox": [
+          1431,
+          1968,
+          1939,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8051192164421082,
+        "bbox": [
+          1830,
+          1968,
+          2148,
+          2316
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5299214124679565,
+        "bbox": [
+          966,
+          1805,
+          1195,
+          2376
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 92,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8101505041122437,
+        "bbox": [
+          1434,
+          1968,
+          1939,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.814845085144043,
+        "bbox": [
+          1831,
+          1968,
+          2150,
+          2316
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7879281044006348,
+        "bbox": [
+          968,
+          1809,
+          1203,
+          2377
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 93,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8545736074447632,
+        "bbox": [
+          1437,
+          1970,
+          1939,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8034855723381042,
+        "bbox": [
+          1830,
+          1968,
+          2149,
+          2315
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8467507362365723,
+        "bbox": [
+          970,
+          1810,
+          1212,
+          2381
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 94,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8733679056167603,
+        "bbox": [
+          1440,
+          1972,
+          1940,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7840383052825928,
+        "bbox": [
+          1829,
+          1967,
+          2149,
+          2315
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.8694577813148499,
+        "bbox": [
+          971,
+          1807,
+          1219,
+          2384
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 95,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8578704595565796,
+        "bbox": [
+          1440,
+          1970,
+          1940,
+          2337
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7887723445892334,
+        "bbox": [
+          1828,
+          1966,
+          2149,
+          2314
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 96,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8477254509925842,
+        "bbox": [
+          1440,
+          1969,
+          1940,
+          2337
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7387045621871948,
+        "bbox": [
+          1826,
+          1964,
+          2150,
+          2314
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.7113361358642578,
+        "bbox": [
+          980,
+          1798,
+          1225,
+          2367
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 97,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.9035598635673523,
+        "bbox": [
+          1442,
+          1970,
+          1940,
+          2337
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7522801756858826,
+        "bbox": [
+          1826,
+          1964,
+          2150,
+          2315
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.6009848713874817,
+        "bbox": [
+          996,
+          1794,
+          1234,
+          2353
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 98,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8932667374610901,
+        "bbox": [
+          1441,
+          1970,
+          1941,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.776897132396698,
+        "bbox": [
+          1826,
+          1966,
+          2151,
+          2316
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5748788714408875,
+        "bbox": [
+          1011,
+          1793,
+          1245,
+          2349
+        ]
+      },
+      {
+        "id": 17,
+        "class": "pedestrian",
+        "confidence": 0.5638368725776672,
+        "bbox": [
+          1245,
+          1832,
+          1483,
+          2384
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 99,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8927972912788391,
+        "bbox": [
+          1442,
+          1970,
+          1942,
+          2338
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8020499348640442,
+        "bbox": [
+          1827,
+          1969,
+          2149,
+          2317
+        ]
+      },
+      {
+        "id": 9,
+        "class": "pedestrian",
+        "confidence": 0.5301817059516907,
+        "bbox": [
+          1019,
+          1793,
+          1250,
+          2352
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 100,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.872604250907898,
+        "bbox": [
+          1438,
+          1968,
+          1942,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8257642388343811,
+        "bbox": [
+          1829,
+          1970,
+          2150,
+          2316
+        ]
+      },
+      {
+        "id": 17,
+        "class": "pedestrian",
+        "confidence": 0.5684468150138855,
+        "bbox": [
+          1246,
+          1835,
+          1483,
+          2385
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 101,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8667807579040527,
+        "bbox": [
+          1436,
+          1967,
+          1943,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.783804714679718,
+        "bbox": [
+          1828,
+          1969,
+          2150,
+          2317
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6062639951705933,
+        "bbox": [
+          11,
+          1772,
+          290,
+          2422
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 102,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8637258410453796,
+        "bbox": [
+          1435,
+          1966,
+          1943,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7913331985473633,
+        "bbox": [
+          1827,
+          1971,
+          2144,
+          2315
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5437433123588562,
+        "bbox": [
+          20,
+          1772,
+          300,
+          2421
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 103,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8638650178909302,
+        "bbox": [
+          1434,
+          1966,
+          1943,
+          2340
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7825601100921631,
+        "bbox": [
+          1823,
+          1972,
+          2140,
+          2317
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6853952407836914,
+        "bbox": [
+          36,
+          1773,
+          316,
+          2418
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 104,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8592902421951294,
+        "bbox": [
+          1434,
+          1966,
+          1944,
+          2340
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7230691909790039,
+        "bbox": [
+          1823,
+          1972,
+          2136,
+          2315
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8356105089187622,
+        "bbox": [
+          45,
+          1772,
+          328,
+          2415
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 105,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8824421763420105,
+        "bbox": [
+          1434,
+          1966,
+          1944,
+          2340
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7253147959709167,
+        "bbox": [
+          1830,
+          1973,
+          2138,
+          2309
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7061539888381958,
+        "bbox": [
+          56,
+          1772,
+          345,
+          2417
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 106,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8253188133239746,
+        "bbox": [
+          1434,
+          1967,
+          1943,
+          2341
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.6543212532997131,
+        "bbox": [
+          1833,
+          1972,
+          2140,
+          2305
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8760154247283936,
+        "bbox": [
+          64,
+          1774,
+          357,
+          2416
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 107,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8267273902893066,
+        "bbox": [
+          1433,
+          1968,
+          1941,
+          2342
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.5846309065818787,
+        "bbox": [
+          1838,
+          1974,
+          2138,
+          2296
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.807713508605957,
+        "bbox": [
+          69,
+          1776,
+          370,
+          2417
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 108,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8031638860702515,
+        "bbox": [
+          1432,
+          1967,
+          1941,
+          2342
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6348451972007751,
+        "bbox": [
+          74,
+          1773,
+          385,
+          2413
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 109,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7772179841995239,
+        "bbox": [
+          1433,
+          1969,
+          1940,
+          2343
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6576550602912903,
+        "bbox": [
+          81,
+          1781,
+          399,
+          2411
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 110,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7508941292762756,
+        "bbox": [
+          1433,
+          1970,
+          1939,
+          2344
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5683962106704712,
+        "bbox": [
+          101,
+          1863,
+          393,
+          2407
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 111,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7733179926872253,
+        "bbox": [
+          1433,
+          1971,
+          1937,
+          2343
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5628793835639954,
+        "bbox": [
+          89,
+          1820,
+          417,
+          2407
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 112,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7102779150009155,
+        "bbox": [
+          1428,
+          1970,
+          1933,
+          2344
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7125499248504639,
+        "bbox": [
+          85,
+          1797,
+          440,
+          2405
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.6400468349456787,
+        "bbox": [
+          1719,
+          1859,
+          2160,
+          2561
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 113,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.871161162853241,
+        "bbox": [
+          1413,
+          1963,
+          1924,
+          2342
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5971912145614624,
+        "bbox": [
+          106,
+          1870,
+          438,
+          2402
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8210824728012085,
+        "bbox": [
+          1709,
+          1845,
+          2160,
+          2591
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 114,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.820713996887207,
+        "bbox": [
+          1406,
+          1956,
+          1921,
+          2340
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6440643072128296,
+        "bbox": [
+          129,
+          1959,
+          430,
+          2398
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9066126942634583,
+        "bbox": [
+          1704,
+          1834,
+          2160,
+          2606
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 115,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.8557429909706116,
+        "bbox": [
+          1403,
+          1953,
+          1917,
+          2337
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7645807266235352,
+        "bbox": [
+          87,
+          1837,
+          481,
+          2395
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8931066989898682,
+        "bbox": [
+          1698,
+          1820,
+          2160,
+          2609
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 116,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.7891458868980408,
+        "bbox": [
+          1398,
+          1950,
+          1911,
+          2335
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8419328331947327,
+        "bbox": [
+          72,
+          1800,
+          504,
+          2394
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8667449355125427,
+        "bbox": [
+          1688,
+          1816,
+          2160,
+          2611
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6740806698799133,
+        "bbox": [
+          896,
+          1983,
+          1155,
+          2182
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 117,
+    "objects": [
+      {
+        "id": 13,
+        "class": "vehicle",
+        "confidence": 0.5261157751083374,
+        "bbox": [
+          1394,
+          1956,
+          1893,
+          2334
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8105412721633911,
+        "bbox": [
+          67,
+          1788,
+          519,
+          2391
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8542638421058655,
+        "bbox": [
+          1678,
+          1810,
+          2160,
+          2620
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.651328980922699,
+        "bbox": [
+          895,
+          1985,
+          1151,
+          2181
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 118,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7170859575271606,
+        "bbox": [
+          68,
+          1782,
+          532,
+          2385
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7613359689712524,
+        "bbox": [
+          1660,
+          1803,
+          2160,
+          2628
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6154080629348755,
+        "bbox": [
+          897,
+          1987,
+          1149,
+          2180
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 119,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8228803277015686,
+        "bbox": [
+          71,
+          1783,
+          547,
+          2381
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.5503451824188232,
+        "bbox": [
+          1645,
+          1799,
+          2160,
+          2624
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6277320384979248,
+        "bbox": [
+          893,
+          1987,
+          1147,
+          2181
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 120,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.9182043075561523,
+        "bbox": [
+          78,
+          1785,
+          562,
+          2373
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.6363215446472168,
+        "bbox": [
+          1627,
+          1795,
+          2160,
+          2632
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.5912103652954102,
+        "bbox": [
+          890,
+          1986,
+          1148,
+          2182
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 121,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.841513991355896,
+        "bbox": [
+          80,
+          1785,
+          571,
+          2362
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.639125645160675,
+        "bbox": [
+          1606,
+          1790,
+          2160,
+          2639
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7135157585144043,
+        "bbox": [
+          887,
+          1985,
+          1148,
+          2183
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 122,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8768483996391296,
+        "bbox": [
+          77,
+          1787,
+          581,
+          2360
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7017614245414734,
+        "bbox": [
+          1577,
+          1789,
+          2153,
+          2653
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7372718453407288,
+        "bbox": [
+          886,
+          1985,
+          1149,
+          2184
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 123,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8146377801895142,
+        "bbox": [
+          78,
+          1794,
+          591,
+          2360
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.834587812423706,
+        "bbox": [
+          1546,
+          1785,
+          2142,
+          2672
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7077840566635132,
+        "bbox": [
+          888,
+          1986,
+          1152,
+          2184
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 124,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6695244312286377,
+        "bbox": [
+          60,
+          1755,
+          617,
+          2359
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8583991527557373,
+        "bbox": [
+          1516,
+          1785,
+          2129,
+          2684
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.736003577709198,
+        "bbox": [
+          886,
+          1986,
+          1152,
+          2185
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 125,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8420644402503967,
+        "bbox": [
+          73,
+          1784,
+          619,
+          2357
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9151439070701599,
+        "bbox": [
+          1487,
+          1782,
+          2118,
+          2692
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7523980736732483,
+        "bbox": [
+          886,
+          1987,
+          1152,
+          2185
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 126,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.841105043888092,
+        "bbox": [
+          79,
+          1805,
+          620,
+          2354
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9228965044021606,
+        "bbox": [
+          1460,
+          1777,
+          2110,
+          2697
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.766534149646759,
+        "bbox": [
+          885,
+          1987,
+          1153,
+          2185
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 127,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7809616923332214,
+        "bbox": [
+          77,
+          1805,
+          632,
+          2352
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8843209147453308,
+        "bbox": [
+          1418,
+          1768,
+          2096,
+          2707
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7080456018447876,
+        "bbox": [
+          886,
+          1987,
+          1155,
+          2185
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 128,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.9074454307556152,
+        "bbox": [
+          80,
+          1808,
+          646,
+          2350
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9511772394180298,
+        "bbox": [
+          1388,
+          1763,
+          2088,
+          2708
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6569515466690063,
+        "bbox": [
+          887,
+          1987,
+          1156,
+          2184
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 129,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8795270323753357,
+        "bbox": [
+          82,
+          1806,
+          664,
+          2348
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9240347146987915,
+        "bbox": [
+          1353,
+          1760,
+          2080,
+          2718
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.5859879851341248,
+        "bbox": [
+          892,
+          1988,
+          1160,
+          2183
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 130,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.874274492263794,
+        "bbox": [
+          87,
+          1804,
+          686,
+          2349
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8425481915473938,
+        "bbox": [
+          1277,
+          1759,
+          2044,
+          2731
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6429173350334167,
+        "bbox": [
+          892,
+          1989,
+          1155,
+          2178
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 131,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.9167275428771973,
+        "bbox": [
+          100,
+          1804,
+          707,
+          2348
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.918464183807373,
+        "bbox": [
+          1237,
+          1756,
+          2042,
+          2745
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6931323409080505,
+        "bbox": [
+          892,
+          1989,
+          1155,
+          2176
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 132,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8811876177787781,
+        "bbox": [
+          117,
+          1804,
+          730,
+          2345
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9342363476753235,
+        "bbox": [
+          1209,
+          1751,
+          2048,
+          2755
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7595745325088501,
+        "bbox": [
+          891,
+          1987,
+          1159,
+          2174
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 133,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.9339258670806885,
+        "bbox": [
+          144,
+          1807,
+          761,
+          2341
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9327130913734436,
+        "bbox": [
+          1174,
+          1748,
+          2043,
+          2761
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.7524385452270508,
+        "bbox": [
+          889,
+          1982,
+          1169,
+          2176
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 134,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.9207600355148315,
+        "bbox": [
+          159,
+          1812,
+          781,
+          2340
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.933052659034729,
+        "bbox": [
+          1137,
+          1743,
+          2038,
+          2766
+        ]
+      },
+      {
+        "id": 19,
+        "class": "vehicle",
+        "confidence": 0.6344106793403625,
+        "bbox": [
+          890,
+          1980,
+          1175,
+          2176
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 135,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8791717886924744,
+        "bbox": [
+          173,
+          1817,
+          798,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9500467777252197,
+        "bbox": [
+          1081,
+          1737,
+          2026,
+          2777
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 136,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8706283569335938,
+        "bbox": [
+          184,
+          1821,
+          808,
+          2339
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.920903742313385,
+        "bbox": [
+          1036,
+          1730,
+          2022,
+          2786
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 137,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8585548400878906,
+        "bbox": [
+          178,
+          1820,
+          801,
+          2337
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9481150507926941,
+        "bbox": [
+          976,
+          1720,
+          2015,
+          2800
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 138,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8777313828468323,
+        "bbox": [
+          182,
+          1819,
+          800,
+          2333
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9638965725898743,
+        "bbox": [
+          916,
+          1709,
+          2005,
+          2807
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 139,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8507178425788879,
+        "bbox": [
+          192,
+          1817,
+          803,
+          2328
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.96477872133255,
+        "bbox": [
+          842,
+          1697,
+          1987,
+          2815
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 140,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8195659518241882,
+        "bbox": [
+          205,
+          1816,
+          805,
+          2319
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9824771285057068,
+        "bbox": [
+          789,
+          1684,
+          1989,
+          2822
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 141,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8413645029067993,
+        "bbox": [
+          223,
+          1816,
+          820,
+          2316
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9874053597450256,
+        "bbox": [
+          723,
+          1674,
+          1981,
+          2833
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 142,
+    "objects": [
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6206974983215332,
+        "bbox": [
+          235,
+          1814,
+          833,
+          2316
+        ]
+      },
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9773737192153931,
+        "bbox": [
+          633,
+          1659,
+          1969,
+          2852
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 143,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9829797744750977,
+        "bbox": [
+          562,
+          1644,
+          1973,
+          2872
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 144,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9755834341049194,
+        "bbox": [
+          474,
+          1632,
+          1945,
+          2875
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 145,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9614592790603638,
+        "bbox": [
+          391,
+          1622,
+          1927,
+          2887
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 146,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.96590256690979,
+        "bbox": [
+          273,
+          1614,
+          1887,
+          2912
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 147,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.983063280582428,
+        "bbox": [
+          198,
+          1603,
+          1874,
+          2934
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 148,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.983805239200592,
+        "bbox": [
+          120,
+          1585,
+          1856,
+          2948
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 149,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9832419157028198,
+        "bbox": [
+          71,
+          1562,
+          1865,
+          2962
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.544371485710144,
+        "bbox": [
+          1837,
+          1851,
+          2130,
+          2244
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 150,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9895356297492981,
+        "bbox": [
+          30,
+          1544,
+          1882,
+          2987
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5614482760429382,
+        "bbox": [
+          1838,
+          1857,
+          2126,
+          2243
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 151,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9874196648597717,
+        "bbox": [
+          0,
+          1530,
+          1877,
+          3008
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 152,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9908319115638733,
+        "bbox": [
+          0,
+          1511,
+          1854,
+          3038
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 153,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9894927740097046,
+        "bbox": [
+          0,
+          1498,
+          1851,
+          3077
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 154,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9882820248603821,
+        "bbox": [
+          0,
+          1482,
+          1825,
+          3112
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5160301923751831,
+        "bbox": [
+          1859,
+          1881,
+          2123,
+          2230
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 155,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9937384128570557,
+        "bbox": [
+          0,
+          1463,
+          1796,
+          3139
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.6306256055831909,
+        "bbox": [
+          1508,
+          1880,
+          1917,
+          2263
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5644459128379822,
+        "bbox": [
+          1859,
+          1882,
+          2126,
+          2230
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 156,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9910321831703186,
+        "bbox": [
+          0,
+          1449,
+          1749,
+          3153
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.6738646626472473,
+        "bbox": [
+          1496,
+          1874,
+          1906,
+          2257
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6787516474723816,
+        "bbox": [
+          1859,
+          1879,
+          2129,
+          2225
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 157,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9818289279937744,
+        "bbox": [
+          0,
+          1440,
+          1691,
+          3150
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.6889204978942871,
+        "bbox": [
+          1496,
+          1871,
+          1906,
+          2250
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5878675580024719,
+        "bbox": [
+          1859,
+          1878,
+          2130,
+          2221
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 158,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9511059522628784,
+        "bbox": [
+          0,
+          1432,
+          1642,
+          3158
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.6683078408241272,
+        "bbox": [
+          1501,
+          1867,
+          1911,
+          2243
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5870653390884399,
+        "bbox": [
+          1862,
+          1875,
+          2134,
+          2216
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 159,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9443501830101013,
+        "bbox": [
+          0,
+          1424,
+          1586,
+          3174
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.6329386234283447,
+        "bbox": [
+          1502,
+          1864,
+          1916,
+          2240
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5964931845664978,
+        "bbox": [
+          1863,
+          1872,
+          2138,
+          2213
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 160,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.9477620720863342,
+        "bbox": [
+          0,
+          1405,
+          1511,
+          3152
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.6032641530036926,
+        "bbox": [
+          1504,
+          1856,
+          1927,
+          2235
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 161,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.885826826095581,
+        "bbox": [
+          0,
+          1393,
+          1453,
+          3138
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8918041586875916,
+        "bbox": [
+          1503,
+          1849,
+          1934,
+          2230
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6273206472396851,
+        "bbox": [
+          1870,
+          1862,
+          2144,
+          2199
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 162,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7846139073371887,
+        "bbox": [
+          0,
+          1377,
+          1386,
+          3144
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8041707873344421,
+        "bbox": [
+          1503,
+          1840,
+          1945,
+          2226
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 163,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.7366489171981812,
+        "bbox": [
+          0,
+          1347,
+          1336,
+          3156
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8511488437652588,
+        "bbox": [
+          1503,
+          1835,
+          1955,
+          2225
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 164,
+    "objects": [
+      {
+        "id": 14,
+        "class": "vehicle",
+        "confidence": 0.8247831463813782,
+        "bbox": [
+          0,
+          1331,
+          1259,
+          3167
+        ]
+      },
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8685349822044373,
+        "bbox": [
+          1506,
+          1832,
+          1964,
+          2221
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 165,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.7853648662567139,
+        "bbox": [
+          1510,
+          1829,
+          1967,
+          2214
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 166,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8604419827461243,
+        "bbox": [
+          1517,
+          1823,
+          1977,
+          2209
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6787807941436768,
+        "bbox": [
+          586,
+          1714,
+          1118,
+          2153
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 167,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8427469730377197,
+        "bbox": [
+          1524,
+          1824,
+          1984,
+          2204
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6250863075256348,
+        "bbox": [
+          601,
+          1709,
+          1132,
+          2141
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5921850204467773,
+        "bbox": [
+          1895,
+          1838,
+          2160,
+          2165
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 168,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8666660189628601,
+        "bbox": [
+          1527,
+          1820,
+          1990,
+          2201
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6562666296958923,
+        "bbox": [
+          1899,
+          1837,
+          2160,
+          2163
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 169,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9137349724769592,
+        "bbox": [
+          1525,
+          1811,
+          1999,
+          2198
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6305580139160156,
+        "bbox": [
+          1901,
+          1835,
+          2160,
+          2161
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5078621506690979,
+        "bbox": [
+          629,
+          1702,
+          1158,
+          2131
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 170,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8769892454147339,
+        "bbox": [
+          1526,
+          1805,
+          2007,
+          2195
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5357280969619751,
+        "bbox": [
+          1904,
+          1831,
+          2160,
+          2160
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 171,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8115024566650391,
+        "bbox": [
+          1529,
+          1805,
+          2011,
+          2193
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5066906213760376,
+        "bbox": [
+          1903,
+          1815,
+          2160,
+          2156
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 172,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8459978699684143,
+        "bbox": [
+          1536,
+          1805,
+          2017,
+          2191
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.550725519657135,
+        "bbox": [
+          1907,
+          1812,
+          2160,
+          2155
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 173,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8473050594329834,
+        "bbox": [
+          1538,
+          1803,
+          2021,
+          2189
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5893197059631348,
+        "bbox": [
+          1907,
+          1802,
+          2160,
+          2155
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 174,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8631887435913086,
+        "bbox": [
+          1539,
+          1802,
+          2024,
+          2188
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6340427994728088,
+        "bbox": [
+          1912,
+          1811,
+          2160,
+          2154
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 175,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8691210150718689,
+        "bbox": [
+          1539,
+          1800,
+          2026,
+          2186
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6327033042907715,
+        "bbox": [
+          1917,
+          1815,
+          2160,
+          2153
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 176,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.88787442445755,
+        "bbox": [
+          1539,
+          1798,
+          2029,
+          2185
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6495516896247864,
+        "bbox": [
+          1917,
+          1812,
+          2160,
+          2152
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 177,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9010637402534485,
+        "bbox": [
+          1540,
+          1800,
+          2030,
+          2185
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6312757730484009,
+        "bbox": [
+          1920,
+          1814,
+          2160,
+          2152
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 178,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9059586524963379,
+        "bbox": [
+          1541,
+          1802,
+          2031,
+          2186
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6233473420143127,
+        "bbox": [
+          1920,
+          1814,
+          2160,
+          2154
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 179,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9152753949165344,
+        "bbox": [
+          1540,
+          1802,
+          2032,
+          2186
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5932626128196716,
+        "bbox": [
+          1916,
+          1799,
+          2160,
+          2154
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 180,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9128154516220093,
+        "bbox": [
+          1539,
+          1803,
+          2033,
+          2187
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6250049471855164,
+        "bbox": [
+          1917,
+          1794,
+          2160,
+          2153
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5185948610305786,
+        "bbox": [
+          735,
+          1706,
+          1238,
+          2119
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 181,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9048181772232056,
+        "bbox": [
+          1538,
+          1803,
+          2032,
+          2187
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6437682509422302,
+        "bbox": [
+          1921,
+          1803,
+          2160,
+          2154
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5678514838218689,
+        "bbox": [
+          739,
+          1706,
+          1238,
+          2120
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 182,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9101353883743286,
+        "bbox": [
+          1537,
+          1803,
+          2032,
+          2187
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6053392291069031,
+        "bbox": [
+          1923,
+          1811,
+          2160,
+          2154
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5503883361816406,
+        "bbox": [
+          744,
+          1707,
+          1238,
+          2119
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.5543217062950134,
+        "bbox": [
+          11,
+          1543,
+          315,
+          2275
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 183,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9097364544868469,
+        "bbox": [
+          1536,
+          1803,
+          2032,
+          2187
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.588510274887085,
+        "bbox": [
+          1924,
+          1814,
+          2160,
+          2154
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6253692507743835,
+        "bbox": [
+          751,
+          1707,
+          1242,
+          2119
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 184,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8747706413269043,
+        "bbox": [
+          1535,
+          1804,
+          2031,
+          2187
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5622102618217468,
+        "bbox": [
+          1931,
+          1813,
+          2151,
+          2119
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6562460064888,
+        "bbox": [
+          756,
+          1707,
+          1244,
+          2118
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.545336127281189,
+        "bbox": [
+          18,
+          1535,
+          328,
+          2277
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 185,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.871723473072052,
+        "bbox": [
+          1531,
+          1806,
+          2027,
+          2189
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6596795916557312,
+        "bbox": [
+          1923,
+          1813,
+          2151,
+          2127
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.6984595656394958,
+        "bbox": [
+          29,
+          1533,
+          340,
+          2271
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 186,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8359526991844177,
+        "bbox": [
+          1524,
+          1806,
+          2022,
+          2190
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6577871441841125,
+        "bbox": [
+          1918,
+          1816,
+          2148,
+          2129
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8185392618179321,
+        "bbox": [
+          39,
+          1535,
+          350,
+          2268
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5330108404159546,
+        "bbox": [
+          768,
+          1708,
+          1253,
+          2117
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 187,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8602664470672607,
+        "bbox": [
+          1518,
+          1806,
+          2017,
+          2190
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5553900599479675,
+        "bbox": [
+          1915,
+          1816,
+          2148,
+          2131
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8604134917259216,
+        "bbox": [
+          47,
+          1541,
+          359,
+          2266
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5403002500534058,
+        "bbox": [
+          771,
+          1711,
+          1254,
+          2118
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 188,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8642939329147339,
+        "bbox": [
+          1516,
+          1803,
+          2019,
+          2189
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.535580575466156,
+        "bbox": [
+          1913,
+          1821,
+          2154,
+          2146
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7312793731689453,
+        "bbox": [
+          52,
+          1545,
+          366,
+          2262
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.601292610168457,
+        "bbox": [
+          772,
+          1712,
+          1254,
+          2117
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 189,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8961001038551331,
+        "bbox": [
+          1511,
+          1801,
+          2019,
+          2189
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5680739283561707,
+        "bbox": [
+          1910,
+          1817,
+          2149,
+          2137
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8772667646408081,
+        "bbox": [
+          58,
+          1549,
+          378,
+          2259
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7615898251533508,
+        "bbox": [
+          771,
+          1711,
+          1255,
+          2118
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 190,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8572455644607544,
+        "bbox": [
+          1507,
+          1805,
+          2011,
+          2190
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5362379550933838,
+        "bbox": [
+          1906,
+          1821,
+          2154,
+          2151
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8435331583023071,
+        "bbox": [
+          62,
+          1552,
+          388,
+          2258
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7368696331977844,
+        "bbox": [
+          770,
+          1713,
+          1251,
+          2116
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 191,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8600682616233826,
+        "bbox": [
+          1504,
+          1807,
+          2006,
+          2191
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6994366645812988,
+        "bbox": [
+          1904,
+          1819,
+          2147,
+          2137
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7608118653297424,
+        "bbox": [
+          60,
+          1551,
+          396,
+          2260
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7167351245880127,
+        "bbox": [
+          771,
+          1714,
+          1248,
+          2113
+        ]
+      },
+      {
+        "id": 23,
+        "class": "pedestrian",
+        "confidence": 0.5416500568389893,
+        "bbox": [
+          1328,
+          1650,
+          1538,
+          2240
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 192,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8662863969802856,
+        "bbox": [
+          1503,
+          1808,
+          2005,
+          2192
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.674924373626709,
+        "bbox": [
+          1900,
+          1816,
+          2144,
+          2131
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.695135235786438,
+        "bbox": [
+          63,
+          1551,
+          410,
+          2262
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.647512674331665,
+        "bbox": [
+          773,
+          1715,
+          1246,
+          2111
+        ]
+      },
+      {
+        "id": 23,
+        "class": "pedestrian",
+        "confidence": 0.6130024194717407,
+        "bbox": [
+          1327,
+          1649,
+          1537,
+          2239
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 193,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8708587884902954,
+        "bbox": [
+          1502,
+          1803,
+          2009,
+          2190
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6029983758926392,
+        "bbox": [
+          1896,
+          1813,
+          2144,
+          2130
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.6530675292015076,
+        "bbox": [
+          65,
+          1551,
+          422,
+          2262
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6419780850410461,
+        "bbox": [
+          774,
+          1713,
+          1247,
+          2108
+        ]
+      },
+      {
+        "id": 23,
+        "class": "pedestrian",
+        "confidence": 0.6742348074913025,
+        "bbox": [
+          1325,
+          1647,
+          1535,
+          2238
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 194,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8798683881759644,
+        "bbox": [
+          1502,
+          1800,
+          2010,
+          2189
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5003882050514221,
+        "bbox": [
+          1895,
+          1817,
+          2153,
+          2146
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8261461853981018,
+        "bbox": [
+          71,
+          1553,
+          436,
+          2253
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5660519599914551,
+        "bbox": [
+          779,
+          1712,
+          1249,
+          2103
+        ]
+      },
+      {
+        "id": 23,
+        "class": "pedestrian",
+        "confidence": 0.6964722275733948,
+        "bbox": [
+          1323,
+          1646,
+          1534,
+          2237
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 195,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8938040137290955,
+        "bbox": [
+          1501,
+          1799,
+          2010,
+          2188
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.799571692943573,
+        "bbox": [
+          72,
+          1552,
+          447,
+          2247
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5946406126022339,
+        "bbox": [
+          778,
+          1710,
+          1248,
+          2100
+        ]
+      },
+      {
+        "id": 23,
+        "class": "pedestrian",
+        "confidence": 0.6146634221076965,
+        "bbox": [
+          1323,
+          1644,
+          1533,
+          2234
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 196,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9114789962768555,
+        "bbox": [
+          1500,
+          1798,
+          2010,
+          2188
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9075239896774292,
+        "bbox": [
+          72,
+          1547,
+          460,
+          2242
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5863943696022034,
+        "bbox": [
+          803,
+          1707,
+          1264,
+          2094
+        ]
+      },
+      {
+        "id": 23,
+        "class": "pedestrian",
+        "confidence": 0.5268398523330688,
+        "bbox": [
+          1325,
+          1641,
+          1533,
+          2226
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5206938982009888,
+        "bbox": [
+          1883,
+          1784,
+          2160,
+          2147
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 197,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9087639451026917,
+        "bbox": [
+          1501,
+          1795,
+          2009,
+          2184
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.888126790523529,
+        "bbox": [
+          75,
+          1544,
+          477,
+          2240
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5950170159339905,
+        "bbox": [
+          820,
+          1706,
+          1270,
+          2087
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5041869282722473,
+        "bbox": [
+          1891,
+          1802,
+          2160,
+          2150
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 198,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8894627094268799,
+        "bbox": [
+          1504,
+          1793,
+          2009,
+          2180
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8676581382751465,
+        "bbox": [
+          74,
+          1543,
+          489,
+          2238
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5893837213516235,
+        "bbox": [
+          855,
+          1704,
+          1288,
+          2080
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 199,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8678447604179382,
+        "bbox": [
+          1505,
+          1792,
+          2010,
+          2177
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7398919463157654,
+        "bbox": [
+          73,
+          1540,
+          502,
+          2235
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5710275173187256,
+        "bbox": [
+          873,
+          1703,
+          1294,
+          2077
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.5300131440162659,
+        "bbox": [
+          1892,
+          1807,
+          2158,
+          2149
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 200,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8651094436645508,
+        "bbox": [
+          1508,
+          1793,
+          2009,
+          2174
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7476270198822021,
+        "bbox": [
+          73,
+          1540,
+          514,
+          2231
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5825981497764587,
+        "bbox": [
+          882,
+          1703,
+          1294,
+          2076
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 201,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8847352266311646,
+        "bbox": [
+          1509,
+          1792,
+          2009,
+          2171
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7426618933677673,
+        "bbox": [
+          95,
+          1534,
+          554,
+          2221
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6155795454978943,
+        "bbox": [
+          889,
+          1703,
+          1292,
+          2074
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 202,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9111911654472351,
+        "bbox": [
+          1511,
+          1791,
+          2010,
+          2168
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8556967973709106,
+        "bbox": [
+          90,
+          1528,
+          564,
+          2216
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6172702312469482,
+        "bbox": [
+          886,
+          1702,
+          1283,
+          2071
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 203,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9155128598213196,
+        "bbox": [
+          1511,
+          1789,
+          2013,
+          2167
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9065932035446167,
+        "bbox": [
+          84,
+          1529,
+          571,
+          2213
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6267076134681702,
+        "bbox": [
+          883,
+          1702,
+          1276,
+          2070
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 204,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9331052899360657,
+        "bbox": [
+          1512,
+          1788,
+          2015,
+          2166
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9370458722114563,
+        "bbox": [
+          78,
+          1531,
+          577,
+          2213
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7113581299781799,
+        "bbox": [
+          869,
+          1702,
+          1263,
+          2069
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 205,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.942759096622467,
+        "bbox": [
+          1512,
+          1789,
+          2016,
+          2166
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9609062671661377,
+        "bbox": [
+          74,
+          1533,
+          584,
+          2211
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7808312773704529,
+        "bbox": [
+          868,
+          1702,
+          1262,
+          2070
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 206,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9500114917755127,
+        "bbox": [
+          1512,
+          1790,
+          2014,
+          2164
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9383397102355957,
+        "bbox": [
+          87,
+          1526,
+          617,
+          2207
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7944202423095703,
+        "bbox": [
+          869,
+          1701,
+          1263,
+          2069
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 207,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9639836549758911,
+        "bbox": [
+          1510,
+          1790,
+          2009,
+          2163
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.947518527507782,
+        "bbox": [
+          84,
+          1524,
+          629,
+          2205
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.8124706745147705,
+        "bbox": [
+          868,
+          1701,
+          1262,
+          2070
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 208,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9619759321212769,
+        "bbox": [
+          1506,
+          1791,
+          2002,
+          2160
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9561043381690979,
+        "bbox": [
+          80,
+          1522,
+          640,
+          2204
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.763092577457428,
+        "bbox": [
+          870,
+          1700,
+          1262,
+          2071
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.8077969551086426,
+        "bbox": [
+          1857,
+          1847,
+          2160,
+          2380
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 209,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9562134146690369,
+        "bbox": [
+          1504,
+          1790,
+          1997,
+          2158
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9573113322257996,
+        "bbox": [
+          75,
+          1518,
+          651,
+          2201
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.7799731492996216,
+        "bbox": [
+          874,
+          1699,
+          1266,
+          2069
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.7945098280906677,
+        "bbox": [
+          1858,
+          1847,
+          2160,
+          2396
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 210,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9490548968315125,
+        "bbox": [
+          1502,
+          1788,
+          1997,
+          2158
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9523373246192932,
+        "bbox": [
+          72,
+          1516,
+          661,
+          2199
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.6816334128379822,
+        "bbox": [
+          875,
+          1696,
+          1268,
+          2070
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.8492910861968994,
+        "bbox": [
+          1847,
+          1829,
+          2160,
+          2404
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 211,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.9296135902404785,
+        "bbox": [
+          1500,
+          1784,
+          1998,
+          2157
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.963722825050354,
+        "bbox": [
+          70,
+          1514,
+          662,
+          2184
+        ]
+      },
+      {
+        "id": 18,
+        "class": "vehicle",
+        "confidence": 0.5362051725387573,
+        "bbox": [
+          880,
+          1692,
+          1272,
+          2071
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9197962284088135,
+        "bbox": [
+          1829,
+          1816,
+          2160,
+          2410
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 212,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8861905336380005,
+        "bbox": [
+          1497,
+          1782,
+          1997,
+          2157
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9734522700309753,
+        "bbox": [
+          71,
+          1513,
+          672,
+          2177
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9433470368385315,
+        "bbox": [
+          1809,
+          1791,
+          2160,
+          2410
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 213,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.8469893336296082,
+        "bbox": [
+          1494,
+          1781,
+          1992,
+          2155
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9723551273345947,
+        "bbox": [
+          66,
+          1508,
+          682,
+          2173
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9738820195198059,
+        "bbox": [
+          1794,
+          1779,
+          2160,
+          2411
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 214,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.7121749520301819,
+        "bbox": [
+          1485,
+          1782,
+          1974,
+          2153
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9696192741394043,
+        "bbox": [
+          63,
+          1506,
+          692,
+          2171
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9863101243972778,
+        "bbox": [
+          1775,
+          1773,
+          2160,
+          2411
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 215,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.5824462175369263,
+        "bbox": [
+          1478,
+          1776,
+          1966,
+          2152
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9589927792549133,
+        "bbox": [
+          62,
+          1505,
+          701,
+          2167
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9902555346488953,
+        "bbox": [
+          1755,
+          1768,
+          2155,
+          2415
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 216,
+    "objects": [
+      {
+        "id": 21,
+        "class": "vehicle",
+        "confidence": 0.5655568838119507,
+        "bbox": [
+          1472,
+          1772,
+          1956,
+          2151
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9545025825500488,
+        "bbox": [
+          57,
+          1501,
+          720,
+          2179
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9873178601264954,
+        "bbox": [
+          1733,
+          1770,
+          2142,
+          2421
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 217,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9609270691871643,
+        "bbox": [
+          60,
+          1508,
+          731,
+          2183
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9810205698013306,
+        "bbox": [
+          1704,
+          1758,
+          2132,
+          2427
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 218,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9644299745559692,
+        "bbox": [
+          58,
+          1505,
+          743,
+          2184
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9814048409461975,
+        "bbox": [
+          1674,
+          1737,
+          2127,
+          2432
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 219,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9621137380599976,
+        "bbox": [
+          59,
+          1502,
+          756,
+          2184
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9898389577865601,
+        "bbox": [
+          1646,
+          1727,
+          2120,
+          2440
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 220,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9614427089691162,
+        "bbox": [
+          61,
+          1505,
+          765,
+          2183
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9637057781219482,
+        "bbox": [
+          1611,
+          1726,
+          2108,
+          2454
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 221,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9493588805198669,
+        "bbox": [
+          63,
+          1508,
+          771,
+          2181
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9639977216720581,
+        "bbox": [
+          1581,
+          1736,
+          2097,
+          2467
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 222,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9283736348152161,
+        "bbox": [
+          67,
+          1510,
+          783,
+          2180
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9103921055793762,
+        "bbox": [
+          1548,
+          1746,
+          2087,
+          2484
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 223,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.920628547668457,
+        "bbox": [
+          77,
+          1515,
+          794,
+          2176
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9206402897834778,
+        "bbox": [
+          1511,
+          1749,
+          2074,
+          2494
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 224,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9354070425033569,
+        "bbox": [
+          114,
+          1535,
+          805,
+          2165
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.929294228553772,
+        "bbox": [
+          1471,
+          1748,
+          2068,
+          2509
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 225,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9190382361412048,
+        "bbox": [
+          143,
+          1555,
+          816,
+          2162
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9637407660484314,
+        "bbox": [
+          1433,
+          1753,
+          2051,
+          2509
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 226,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9337975978851318,
+        "bbox": [
+          161,
+          1568,
+          823,
+          2160
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.950821042060852,
+        "bbox": [
+          1389,
+          1750,
+          2042,
+          2515
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 227,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.9001739621162415,
+        "bbox": [
+          172,
+          1577,
+          829,
+          2159
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9443995356559753,
+        "bbox": [
+          1347,
+          1748,
+          2035,
+          2522
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 228,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.8155264854431152,
+        "bbox": [
+          179,
+          1581,
+          837,
+          2159
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9599534273147583,
+        "bbox": [
+          1296,
+          1746,
+          2026,
+          2536
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 229,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7212474346160889,
+        "bbox": [
+          193,
+          1583,
+          854,
+          2159
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9600265026092529,
+        "bbox": [
+          1241,
+          1746,
+          2020,
+          2557
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 230,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7691609859466553,
+        "bbox": [
+          210,
+          1583,
+          878,
+          2160
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9553253650665283,
+        "bbox": [
+          1190,
+          1749,
+          2016,
+          2577
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 231,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.740917980670929,
+        "bbox": [
+          222,
+          1580,
+          902,
+          2163
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9480711817741394,
+        "bbox": [
+          1129,
+          1747,
+          2010,
+          2597
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 232,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.6711282730102539,
+        "bbox": [
+          233,
+          1586,
+          917,
+          2167
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9646691679954529,
+        "bbox": [
+          1070,
+          1744,
+          2005,
+          2614
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 233,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7591305375099182,
+        "bbox": [
+          233,
+          1577,
+          931,
+          2168
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9813449382781982,
+        "bbox": [
+          1011,
+          1744,
+          1994,
+          2626
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 234,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.7402569055557251,
+        "bbox": [
+          233,
+          1575,
+          930,
+          2165
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.975425660610199,
+        "bbox": [
+          948,
+          1749,
+          1984,
+          2646
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 235,
+    "objects": [
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.5025229454040527,
+        "bbox": [
+          226,
+          1575,
+          915,
+          2165
+        ]
+      },
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9667041301727295,
+        "bbox": [
+          876,
+          1748,
+          1974,
+          2665
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 236,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9884656667709351,
+        "bbox": [
+          815,
+          1750,
+          1967,
+          2678
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 237,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9915781021118164,
+        "bbox": [
+          737,
+          1751,
+          1947,
+          2689
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 238,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.985775887966156,
+        "bbox": [
+          651,
+          1752,
+          1935,
+          2712
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 239,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9943623542785645,
+        "bbox": [
+          566,
+          1743,
+          1920,
+          2720
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.6993343234062195,
+        "bbox": [
+          225,
+          1582,
+          891,
+          2171
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 240,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9906258583068848,
+        "bbox": [
+          468,
+          1742,
+          1899,
+          2742
+        ]
+      },
+      {
+        "id": 22,
+        "class": "vehicle",
+        "confidence": 0.578319787979126,
+        "bbox": [
+          227,
+          1583,
+          859,
+          2161
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 241,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9932031631469727,
+        "bbox": [
+          349,
+          1736,
+          1838,
+          2748
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5996530652046204,
+        "bbox": [
+          1907,
+          1765,
+          2154,
+          2145
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 242,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9887948036193848,
+        "bbox": [
+          232,
+          1734,
+          1812,
+          2783
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 243,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9898682832717896,
+        "bbox": [
+          151,
+          1726,
+          1808,
+          2809
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 244,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.989980161190033,
+        "bbox": [
+          81,
+          1710,
+          1810,
+          2830
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 245,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9926740527153015,
+        "bbox": [
+          9,
+          1694,
+          1802,
+          2856
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 246,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9960432052612305,
+        "bbox": [
+          0,
+          1680,
+          1800,
+          2884
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 247,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9964117407798767,
+        "bbox": [
+          0,
+          1670,
+          1815,
+          2928
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 248,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9966545104980469,
+        "bbox": [
+          0,
+          1667,
+          1803,
+          2956
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 249,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9974743723869324,
+        "bbox": [
+          0,
+          1657,
+          1764,
+          2977
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 250,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9965260624885559,
+        "bbox": [
+          0,
+          1651,
+          1744,
+          3032
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8207122087478638,
+        "bbox": [
+          1516,
+          1799,
+          2005,
+          2184
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 251,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9937747716903687,
+        "bbox": [
+          0,
+          1646,
+          1718,
+          3063
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8086347579956055,
+        "bbox": [
+          1510,
+          1797,
+          2003,
+          2185
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 252,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9962054491043091,
+        "bbox": [
+          0,
+          1645,
+          1683,
+          3115
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.6915732622146606,
+        "bbox": [
+          1513,
+          1798,
+          2007,
+          2185
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5418603420257568,
+        "bbox": [
+          1923,
+          1817,
+          2134,
+          2133
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 253,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9940379858016968,
+        "bbox": [
+          0,
+          1649,
+          1626,
+          3151
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7126858830451965,
+        "bbox": [
+          1512,
+          1797,
+          2010,
+          2187
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5541076064109802,
+        "bbox": [
+          1919,
+          1817,
+          2135,
+          2132
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 254,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9814397692680359,
+        "bbox": [
+          0,
+          1643,
+          1575,
+          3176
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.6956025958061218,
+        "bbox": [
+          1506,
+          1797,
+          2006,
+          2187
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5872829556465149,
+        "bbox": [
+          1916,
+          1818,
+          2136,
+          2132
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 255,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9919862747192383,
+        "bbox": [
+          0,
+          1640,
+          1494,
+          3170
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7467743754386902,
+        "bbox": [
+          1498,
+          1795,
+          2002,
+          2187
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5585141777992249,
+        "bbox": [
+          1910,
+          1816,
+          2137,
+          2132
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 256,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9910395741462708,
+        "bbox": [
+          0,
+          1646,
+          1388,
+          3132
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8295668363571167,
+        "bbox": [
+          1495,
+          1792,
+          2001,
+          2185
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5002490282058716,
+        "bbox": [
+          1905,
+          1814,
+          2138,
+          2132
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 257,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9925710558891296,
+        "bbox": [
+          0,
+          1645,
+          1307,
+          3101
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.838600754737854,
+        "bbox": [
+          1493,
+          1791,
+          2000,
+          2182
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 258,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.9924174547195435,
+        "bbox": [
+          0,
+          1638,
+          1213,
+          3078
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8592456579208374,
+        "bbox": [
+          1487,
+          1792,
+          1996,
+          2184
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5109845995903015,
+        "bbox": [
+          1901,
+          1814,
+          2140,
+          2132
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 259,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.958162784576416,
+        "bbox": [
+          0,
+          1639,
+          1121,
+          3077
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8328840136528015,
+        "bbox": [
+          1482,
+          1792,
+          1993,
+          2183
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 260,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.8900803923606873,
+        "bbox": [
+          0,
+          1668,
+          1019,
+          3112
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8020213842391968,
+        "bbox": [
+          1474,
+          1792,
+          1987,
+          2181
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 261,
+    "objects": [
+      {
+        "id": 20,
+        "class": "vehicle",
+        "confidence": 0.6335658431053162,
+        "bbox": [
+          0,
+          1705,
+          908,
+          3136
+        ]
+      },
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7962819933891296,
+        "bbox": [
+          1471,
+          1791,
+          1987,
+          2179
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 262,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7930625677108765,
+        "bbox": [
+          1468,
+          1791,
+          1986,
+          2179
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 263,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7772995829582214,
+        "bbox": [
+          1463,
+          1790,
+          1986,
+          2178
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 264,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7851014733314514,
+        "bbox": [
+          1460,
+          1789,
+          1988,
+          2177
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.668987512588501,
+        "bbox": [
+          745,
+          2126,
+          1026,
+          2316
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 265,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7836475968360901,
+        "bbox": [
+          1459,
+          1788,
+          1991,
+          2177
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7588921785354614,
+        "bbox": [
+          744,
+          2125,
+          1025,
+          2315
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5242297649383545,
+        "bbox": [
+          1899,
+          1807,
+          2154,
+          2146
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 266,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7813533544540405,
+        "bbox": [
+          1458,
+          1787,
+          1995,
+          2177
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7913164496421814,
+        "bbox": [
+          744,
+          2124,
+          1027,
+          2315
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5528622269630432,
+        "bbox": [
+          1899,
+          1805,
+          2156,
+          2146
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 267,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8400800824165344,
+        "bbox": [
+          1470,
+          1787,
+          2006,
+          2176
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7630859613418579,
+        "bbox": [
+          746,
+          2124,
+          1029,
+          2315
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 268,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8281657695770264,
+        "bbox": [
+          1476,
+          1787,
+          2012,
+          2176
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7540995478630066,
+        "bbox": [
+          746,
+          2123,
+          1031,
+          2316
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 269,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7980153560638428,
+        "bbox": [
+          1480,
+          1787,
+          2015,
+          2174
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.6815325617790222,
+        "bbox": [
+          748,
+          2123,
+          1031,
+          2315
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 270,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8258633017539978,
+        "bbox": [
+          1482,
+          1787,
+          2018,
+          2174
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7384759187698364,
+        "bbox": [
+          750,
+          2123,
+          1032,
+          2315
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 271,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7565200328826904,
+        "bbox": [
+          1485,
+          1787,
+          2018,
+          2172
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7363572120666504,
+        "bbox": [
+          753,
+          2123,
+          1033,
+          2314
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 272,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7542134523391724,
+        "bbox": [
+          1490,
+          1787,
+          2017,
+          2166
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.714127242565155,
+        "bbox": [
+          755,
+          2123,
+          1034,
+          2313
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 273,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8647722005844116,
+        "bbox": [
+          1496,
+          1788,
+          2019,
+          2164
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7544317841529846,
+        "bbox": [
+          753,
+          2123,
+          1033,
+          2314
+        ]
+      },
+      {
+        "id": 29,
+        "class": "vehicle",
+        "confidence": 0.5834826827049255,
+        "bbox": [
+          334,
+          1790,
+          615,
+          1992
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 274,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8696721792221069,
+        "bbox": [
+          1485,
+          1787,
+          2018,
+          2170
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.6954310536384583,
+        "bbox": [
+          750,
+          2123,
+          1032,
+          2315
+        ]
+      },
+      {
+        "id": 29,
+        "class": "vehicle",
+        "confidence": 0.63238924741745,
+        "bbox": [
+          340,
+          1793,
+          619,
+          1994
+        ]
+      },
+      {
+        "id": 26,
+        "class": "vehicle",
+        "confidence": 0.5099526047706604,
+        "bbox": [
+          1894,
+          1781,
+          2160,
+          2139
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 275,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8893669843673706,
+        "bbox": [
+          1484,
+          1786,
+          2019,
+          2172
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7223343849182129,
+        "bbox": [
+          750,
+          2123,
+          1031,
+          2315
+        ]
+      },
+      {
+        "id": 29,
+        "class": "vehicle",
+        "confidence": 0.6028516292572021,
+        "bbox": [
+          349,
+          1795,
+          626,
+          1994
+        ]
+      },
+      {
+        "id": 31,
+        "class": "vehicle",
+        "confidence": 0.5878598093986511,
+        "bbox": [
+          12,
+          1633,
+          282,
+          2205
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 276,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7968658208847046,
+        "bbox": [
+          1485,
+          1788,
+          2017,
+          2172
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.6844982504844666,
+        "bbox": [
+          748,
+          2123,
+          1030,
+          2315
+        ]
+      },
+      {
+        "id": 29,
+        "class": "vehicle",
+        "confidence": 0.6520851254463196,
+        "bbox": [
+          352,
+          1805,
+          619,
+          1996
+        ]
+      },
+      {
+        "id": 31,
+        "class": "vehicle",
+        "confidence": 0.7027431726455688,
+        "bbox": [
+          19,
+          1628,
+          292,
+          2203
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 277,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.8011242151260376,
+        "bbox": [
+          1486,
+          1789,
+          2014,
+          2171
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.7247720956802368,
+        "bbox": [
+          746,
+          2122,
+          1027,
+          2314
+        ]
+      },
+      {
+        "id": 29,
+        "class": "vehicle",
+        "confidence": 0.5936101078987122,
+        "bbox": [
+          343,
+          1802,
+          616,
+          1995
+        ]
+      },
+      {
+        "id": 31,
+        "class": "vehicle",
+        "confidence": 0.6262743473052979,
+        "bbox": [
+          15,
+          1625,
+          289,
+          2203
+        ]
+      }
+    ]
+  },
+  {
+    "frame_id": 278,
+    "objects": [
+      {
+        "id": 27,
+        "class": "vehicle",
+        "confidence": 0.7911847233772278,
+        "bbox": [
+          1480,
+          1788,
+          2011,
+          2171
+        ]
+      },
+      {
+        "id": 28,
+        "class": "vehicle",
+        "confidence": 0.6441713571548462,
+        "bbox": [
+          742,
+          2119,
+          1027,
+          2314
+        ]
+      },
+      {
+        "id": 29,
+        "class": "vehicle",
+        "confidence": 0.5829244256019592,
+        "bbox": [
+          328,
+          1794,
+          610,
+          1993
+        ]
+      },
+      {
+        "id": 31,
+        "class": "vehicle",
+        "confidence": 0.5812374949455261,
+        "bbox": [
+          15,
+          1626,
+          287,
+          2196
+        ]
+      }
+    ]
+  }
+]

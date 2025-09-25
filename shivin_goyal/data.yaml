@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/project_data/images
+val: /content/drive/MyDrive/project_data/images   # use same images for now
+test: /content/drive/MyDrive/project_data/images  # optional
+
+nc: 2
+names: ['pedestrian', 'vehicle']

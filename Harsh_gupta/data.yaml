@@ -1,0 +1,5 @@
+path: ./export-#Vwb9qfJIcnarc8Txefn8
+train: images
+val: images
+nc: 2
+names: ['vehicle', 'pedestrian']

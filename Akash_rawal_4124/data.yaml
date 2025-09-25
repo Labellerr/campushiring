@@ -1,0 +1,14 @@
+# Path to dataset root
+path: C:/Users/akash/akash_rawal_1/Akash_rawal/Akash_rawal_4124/Datasets/mydataset  
+
+# Train and validation folders
+train: images/train
+val: images/val
+
+# Number of classes
+nc: 2
+
+# Class names
+names:
+  0: person
+  1: vehicle
