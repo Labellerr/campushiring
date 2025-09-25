@@ -1,4 +1,0 @@
-streamlit
-ultralytics
-supervision
-opencv-python-headless
