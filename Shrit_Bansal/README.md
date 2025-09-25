@@ -1,5 +1,5 @@
 # Live demo
-https://campushiring-h9uqxszmobdjmcfk58hnd2.streamlit.app/
+https://campushiring-3nzcnndyrhqgn2mmghjwaq.streamlit.app/
 
 ## Demo video (Google Drive)
 https://drive.google.com/file/d/1UjMnmuFf0Ul2E0QPMIGhucEY9mllzKE3/view?usp=sharing
