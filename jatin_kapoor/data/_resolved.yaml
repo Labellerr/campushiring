@@ -1,0 +1,6 @@
+names:
+  0: person
+  1: vehicle
+test: /Users/jatinkapoor/Downloads/labeller-ai-assignment-v2/data/vehicles_pedestrians/images/test
+train: /Users/jatinkapoor/Downloads/labeller-ai-assignment-v2/data/vehicles_pedestrians/images/train
+val: /Users/jatinkapoor/Downloads/labeller-ai-assignment-v2/data/vehicles_pedestrians/images/val

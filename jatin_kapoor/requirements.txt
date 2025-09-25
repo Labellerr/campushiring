@@ -1,0 +1,9 @@
+ultralytics>=8.2.0
+opencv-python
+numpy
+pandas
+torch
+torchvision
+streamlit
+pyyaml
+tqdm

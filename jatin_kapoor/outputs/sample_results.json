@@ -1,0 +1,5 @@
+{
+  "video": "sample.mp4",
+  "model": "models/best.pt",
+  "tracks": []
+}
