@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.log
+
+# Virtual environment
+myenv/
+venv/
+.env
+.env.*
+
+# Python package folders
+*.egg-info/
+dist/
+build/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# YOLO / temporary outputs
+# Ignore all runs except saved models or videos you want
+runs/segment/train*/temp/
+# Or ignore specific temp folders if needed
+
+# Results / uploads
+uploads/
+# You can choose to track results if you want to share them
+# results/  <-- comment out if you want to keep JSON results
+
+# Jupyter / Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Others
+*.bak
+*.old

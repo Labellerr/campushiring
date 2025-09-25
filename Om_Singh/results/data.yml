@@ -1,0 +1,9 @@
+# Paths are relative to this data.yml file's location
+train: ./train_yolo/images
+val: ./valid_yolo/images
+
+# Number of classes
+nc: 2
+
+# Class names in order (0: Vehicle, 1: Pedestrian)
+names: ['Vehicle', 'Pedestrian']
