@@ -1,0 +1,6 @@
+
+train: /content/CAMPUSHIRING/campushiring/Image-Segmention-Assignment-Sahil/dataset/images/train
+val: /content/CAMPUSHIRING/campushiring/Image-Segmention-Assignment-Sahil/dataset/images/val
+
+nc: 7
+names: ['truck', 'pedestrian', 'motorbike', 'auto', 'car', 'cycle', 'bus']
