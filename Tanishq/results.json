@@ -1,0 +1,11 @@
+{
+  "demo_tracking_results": {
+    "video": "sample_traffic.mp4",
+    "detections": 45,
+    "unique_tracks": 12,
+    "sample_detection": {
+      "frame": 1, "track_id": 1, "class": "vehicle", 
+      "confidence": 0.89, "bbox": [100, 200, 300, 400]
+    }
+  }
+}

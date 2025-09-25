@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Instance Segmentation</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Person and Vechicle detect Segmentation</h1>
+        <form id="uploadForm" action="/upload/" enctype="multipart/form-data" method="post">
+            <input type="file" name="file" id="videoFile" accept="video/*" required>
+            <button type="submit" class="btn"> Process Video or image</button>
+        </form>
+        <div id="loading" class="loading">
+            Processing... ⏳
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
