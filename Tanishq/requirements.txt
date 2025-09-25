@@ -1,3 +1,0 @@
-Flask==2.3.3
-ultralytics==8.0.196
-gunicorn==21.2.0
