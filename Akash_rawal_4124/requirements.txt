@@ -1,0 +1,23 @@
+# Web & FastAPI
+fastapi
+uvicorn[standard]
+jinja2
+python-multipart
+
+ultralytics
+
+
+opencv-python-headless
+pillow
+numpy
+scipy
+
+# Utilities
+tqdm
+pandas
+matplotlib
+
+
+# labellerr
+
+https://github.com/tensormatics/SDKPython/releases/download/prod/labellerr_sdk-1.0.0.tar.gz

@@ -1,0 +1,11 @@
+.env
+venv
+ByteTrack
+images
+labels
+runs
+test_images
+classes.txt
+evaluation_metrics.txt
+testing.py
+upload_results.py

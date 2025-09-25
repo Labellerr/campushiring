@@ -1,0 +1,25 @@
+# Core ML and training
+ultralytics>=8.3.0
+opencv-python>=4.9.0.80
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.11.4
+matplotlib>=3.8.0
+seaborn>=0.13.0
+scikit-learn>=1.4.0
+
+# Web apps
+streamlit>=1.36.0
+gradio>=4.44.0
+
+# Utilities
+PyYAML>=6.0.1
+rich>=13.7.0
+loguru>=0.7.2
+psutil>=5.9.8
+
+# Report generation
+reportlab>=4.2.0
+
+# Optional: Colab-specific helpers
+tqdm>=4.66.0
