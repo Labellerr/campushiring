@@ -1,0 +1,12 @@
+ultralytics==8.1.3
+opencv-python
+numpy
+torch
+pycocotools
+matplotlib
+tqdm
+# tracking
+git+https://github.com/ifzhang/ByteTrack.git
+# labellerr (replace with actual package if different)
+labellerr-sdk
+flask
