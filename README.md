@@ -1,3 +1,4 @@
+
 # 🚗👤 Vehicle & Pedestrian Segmentation with ByteTrack
 
 A specialized computer vision application for **vehicle and pedestrian detection and tracking** using YOLOv8 segmentation models and ByteTrack algorithm. Built with Streamlit for easy deployment and real-time analysis.
@@ -259,3 +260,6 @@ torch.cuda.empty_cache()  # Clear GPU memory
 **🎯 Built specifically for vehicle and pedestrian segmentation and tracking**
 
 *Optimized for urban traffic monitoring and pedestrian safety applications*
+=======
+# campushiring
+This repository is part of the hiring process at Labellerr AI where students complete the assignment and raise a PR. Only the assignments which follow the guidelines will be accepted

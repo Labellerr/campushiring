@@ -1,0 +1,6 @@
+{
+  "video": "runs\\webapp_uploads\\WhatsApp Video 2025-09-22 at 23.48.36_a39ddf2c.mp4",
+  "weights": "yolov8s-seg.pt",
+  "tracker": "bytetrack.yaml",
+  "output_dir": "D:\\demo-cursor\\runs\\webapp_results\\track2"
+}

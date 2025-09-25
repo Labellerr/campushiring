@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/cv_assignment/yolo_dataset/images/train
+val: /content/drive/MyDrive/cv_assignment/yolo_dataset/images/val
+test: /content/drive/MyDrive/cv_assignment/yolo_dataset/images/test
+
+nc: 4
+names: ['person', 'car', 'bus', 'motorbike']
