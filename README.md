@@ -254,8 +254,3 @@ torch.cuda.empty_cache()  # Clear GPU memory
 - **Video**: MP4 with segmentation overlays
 - **Data**: JSON tracking data, CSV analytics
 - **Images**: Segmentation masks, trajectory plots
-
-
-**🎯 Built specifically for vehicle and pedestrian segmentation and tracking**
-
-*Optimized for urban traffic monitoring and pedestrian safety applications*
