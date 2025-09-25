@@ -17,19 +17,22 @@ You can access and interact with the live video tracking application here:
 Here's a look at the application in action:
 
 1.  **Welcome to the App:** The Streamlit interface, ready for video uploads and configuration.
-    http://googleusercontent.com/image_generation_content/0
+    <img width="1884" height="835" alt="image" src="https://github.com/user-attachments/assets/041a45a8-aa88-454a-9995-4a11989d48c2" />
+
 
 
 2.  **Original Video Input:** A sample video uploaded before processing.
-    http://googleusercontent.com/image_generation_content/1
+    <img width="673" height="383" alt="image" src="https://github.com/user-attachments/assets/a2b2b4b1-1d9a-4812-87ce-274cdfc76088" />
 
 
 3.  **Processed Video with Tracking:** The same video, now with bounding boxes, segmentation masks, and unique tracking IDs for vehicles and pedestrians.
-    http://googleusercontent.com/image_generation_content/2
+    <img width="1369" height="611" alt="image" src="https://github.com/user-attachments/assets/68dcfc0c-cd4f-4b23-adf4-19bddb6f4944" />
+
 
 
 4.  **Results & Analytics:** The "Detection Table" showing detailed tracking data, including object class, confidence, bounding box coordinates, and timestamps.
-    http://googleusercontent.com/image_generation_content/3
+    <img width="1201" height="611" alt="image" src="https://github.com/user-attachments/assets/7c7217e7-7945-48da-9bde-a8735394c4cb" />
+
 
 
 
